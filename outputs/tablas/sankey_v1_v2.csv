@@ -1,0 +1,102 @@
+from,to,n
+v1: Sin señal,v2: curiosidad,4819
+v1: Sin señal,v2: frustración,153
+v1: Sin señal,v2: gratitud,1
+v1: Sin señal,v2: publicidad (excluida),430
+v1: Sin señal,v2: sin señal,9735
+v1: admiración,v2: admiración,38
+v1: admiración,v2: publicidad (excluida),7
+v1: alegría,v2: alegría,365
+v1: alegría,v2: confusión,4
+v1: alegría,v2: curiosidad,30
+v1: alegría,v2: decepción,1
+v1: alegría,v2: enojo,2
+v1: alegría,v2: esperanza,5
+v1: alegría,v2: frustración,7
+v1: alegría,v2: gratitud,6
+v1: alegría,v2: preocupación,64
+v1: alegría,v2: publicidad (excluida),30
+v1: alegría,v2: seguridad,2
+v1: alegría,v2: sin señal,223
+v1: alegría,v2: tranquilidad,1
+v1: alegría,v2: tristeza,1
+v1: cansancio,v2: cansancio,17
+v1: confusión,v2: alegría,1
+v1: confusión,v2: confusión,164
+v1: confusión,v2: curiosidad,57
+v1: confusión,v2: decepción,1
+v1: confusión,v2: frustración,5
+v1: confusión,v2: gratitud,1
+v1: confusión,v2: preocupación,3
+v1: confusión,v2: publicidad (excluida),16
+v1: confusión,v2: sin señal,73
+v1: confusión,v2: sorpresa,1
+v1: confusión,v2: tranquilidad,1
+v1: confusión,v2: tristeza,6
+v1: curiosidad,v2: curiosidad,1368
+v1: curiosidad,v2: frustración,5
+v1: curiosidad,v2: gratitud,1
+v1: curiosidad,v2: publicidad (excluida),45
+v1: curiosidad,v2: sin señal,39
+v1: decepción,v2: alegría,1
+v1: decepción,v2: decepción,68
+v1: decepción,v2: frustración,1
+v1: decepción,v2: publicidad (excluida),1
+v1: decepción,v2: sin señal,1
+v1: enojo,v2: curiosidad,3
+v1: enojo,v2: enojo,44
+v1: enojo,v2: frustración,1
+v1: enojo,v2: publicidad (excluida),1
+v1: enojo,v2: sin señal,2
+v1: esperanza,v2: confusión,1
+v1: esperanza,v2: curiosidad,1
+v1: esperanza,v2: esperanza,73
+v1: esperanza,v2: frustración,2
+v1: esperanza,v2: preocupación,3
+v1: esperanza,v2: sin señal,21
+v1: esperanza,v2: tranquilidad,2
+v1: esperanza,v2: tristeza,2
+v1: frustración,v2: alegría,1
+v1: frustración,v2: curiosidad,1
+v1: frustración,v2: frustración,187
+v1: frustración,v2: preocupación,1
+v1: frustración,v2: sin señal,1
+v1: gratitud,v2: curiosidad,1
+v1: gratitud,v2: decepción,1
+v1: gratitud,v2: gratitud,783
+v1: gratitud,v2: publicidad (excluida),24
+v1: gratitud,v2: sorpresa,1
+v1: preocupación,v2: alegría,1
+v1: preocupación,v2: curiosidad,5
+v1: preocupación,v2: gratitud,1
+v1: preocupación,v2: preocupación,218
+v1: preocupación,v2: publicidad (excluida),17
+v1: preocupación,v2: sin señal,18
+v1: preocupación,v2: tristeza,1
+v1: seguridad,v2: confusión,1
+v1: seguridad,v2: curiosidad,23
+v1: seguridad,v2: enojo,1
+v1: seguridad,v2: frustración,2
+v1: seguridad,v2: gratitud,3
+v1: seguridad,v2: publicidad (excluida),9
+v1: seguridad,v2: seguridad,116
+v1: seguridad,v2: sin señal,99
+v1: seguridad,v2: tranquilidad,1
+v1: sorpresa,v2: confusión,2
+v1: sorpresa,v2: curiosidad,3
+v1: sorpresa,v2: decepción,1
+v1: sorpresa,v2: publicidad (excluida),6
+v1: sorpresa,v2: sin señal,9
+v1: sorpresa,v2: sorpresa,66
+v1: sorpresa,v2: tristeza,1
+v1: tranquilidad,v2: publicidad (excluida),1
+v1: tranquilidad,v2: sin señal,2
+v1: tranquilidad,v2: tranquilidad,71
+v1: tristeza,v2: confusión,1
+v1: tristeza,v2: curiosidad,1
+v1: tristeza,v2: esperanza,1
+v1: tristeza,v2: frustración,1
+v1: tristeza,v2: gratitud,1
+v1: tristeza,v2: publicidad (excluida),2
+v1: tristeza,v2: sin señal,1
+v1: tristeza,v2: tristeza,263

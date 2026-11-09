@@ -1,0 +1,28 @@
+paso,fecha,etapa,accion,filas_antes,filas_despues,salida,estado,origen
+1,2026-10-27 11:18,1. Ingesta,Lectura de result.json desde media.zip (28 000 elementos); SHA-256 del zip,28000,28000,base.rds,OK,reconstruida
+2,2026-10-27 11:18,2. Limpieza,"Marcas de ruido, repetidos, rafagas y hash de usuario; sin borrar filas",28000,28000,limpio.rds,OK,reconstruida
+3,2026-10-27 11:20,3. Periodos,"Invierno (may-ago), Verano (dic-feb) y Fuera de temporada",28000,28000,listo.rds,OK,reconstruida
+4,2026-10-27 11:39,6. Periodos x sentimiento,Tabla de sentimientos por periodo,135,135,sentimientos_por_periodo.csv,OK,reconstruida
+5,2026-10-27 11:39,6. Sankey,Sankey periodo a sentimiento (estatico e interactivo),NA,NA,g_sankey_periodos.png,OK,reconstruida
+6,2026-10-27 11:47,4. Lexico,Diccionario propio de 15 sentimientos (palabras y emojis),423,423,lexicon_sentimientos.csv,OK,reconstruida
+7,2026-10-27 11:48,5. Sentimientos,Conteo de sentimientos por mensaje con el diccionario propio,28000,28000,listo_sent.rds,OK,reconstruida
+8,2026-10-27 11:49,7. NRC vs propio,Comparacion syuzhet/NRC (8) contra diccionario propio (15),23,23,comparacion_nrc_propio.csv,OK,reconstruida
+9,2026-10-27 11:49,7. Reacciones,Sentimiento de las reacciones (emojis),11,11,reacciones_por_sentimiento.csv,OK,reconstruida
+10,2026-10-27 11:50,8. Genero,Sexo inferido por nombre (solo hash y sexo) y sentimientos por sexo,4460,4460,usuarios_sexo.csv,OK,reconstruida
+11,2026-10-27 13:05,9. Texto,"Tokenizacion, stopwords, frecuencias, TF-IDF, bigramas, Zipf",77708,77708,tokens.rds,OK,reconstruida
+12,2026-10-27 13:16,10. Temas,LDA (K=6) y tema dominante por mensaje,10089,10089,temas.rds,OK,reconstruida
+13,2026-10-27 13:19,11. Picos y respuesta,Dias pico de preocupacion y velocidad de respuesta por sentimiento,16,16,respuesta_por_sentimiento.csv,OK,reconstruida
+14,2026-10-27 13:24,12. Indice y nucleo,Indice emocional mensual y nucleo de usuarios vs resto,33,33,indice_emocional_mensual.csv,OK,reconstruida
+15,2026-10-27 13:28,13. Validacion,Muestra de 100 mensajes para validacion manual del diccionario,100,100,muestra_100.csv,OK,reconstruida
+16,2026-10-27 14:19,14b. Ajuste visual,Nubes de palabras y red de bigramas con fondo blanco,150,150,"g_nubes_sentimientos.png, g_red_bigramas.png",OK,ejecucion
+17,2026-10-28 00:48,8. Genero,Sexo inferido por diccionario de nombres + terminacion; sentimientos por sexo con prueba de proporciones,19317,19317,"usuarios_sexo.csv, g_sentimientos_sexo.png",OK,ejecucion
+18,2026-10-28 00:49,11. Picos y respuesta,"Dias pico con palabras clave, hora x dia, sentimiento por hora y velocidad de respuesta por sentimiento",19317,19317,"g_picos_dia_*, g_heatmap_hora_dia, g_respuesta_sentimiento",OK,ejecucion
+19,2026-10-28 00:49,12. Indice y nucleo,Indice emocional mensual/periodo; nucleo 100+ vs resto; top usuarios anonimos,19317,19317,"g_indice_emocional, g_nucleo_vs_resto, g_top_usuarios",OK,ejecucion
+20,2026-10-28 00:49,14b. Ajuste visual,Nubes de palabras y red de bigramas con fondo blanco,150,150,"g_nubes_sentimientos.png, g_red_bigramas.png",OK,ejecucion
+21,2026-10-28 00:54,6. Periodos,"Sentimientos por periodo: heatmap, Sankey, series mensuales y picos",19317,19317,graficos,OK,ejecucion
+22,2026-10-28 00:57,7. Comparacion y reacciones,NRC/syuzhet (8) vs propio (15) y sentimiento de reacciones,18992,18992,"g_nrc_vs_propio.png, g_reacciones_sentimiento.png",OK,ejecucion
+23,2026-10-28 01:09,8. Radar y polar,Radar de emociones (temporadas y periodos) y relojes polares hora/semana,19317,19317,"g_radar_*.png, g_polar_*.png, plotly_radar_*.html, plotly_polar_hora.html",OK,ejecucion
+24,2026-10-28 01:14,9. Calidad de datos,"Embudo, dominios, spam con sensibilidad de umbral y chequeos V1-V10",28000,19317,"g_calidad_*.png, plotly_calidad_*.html, calidad_*.csv",OK,ejecucion
+25,2026-10-28 01:26,10. Sitio Quarto,"Sitio actualizado con v2, validacion, radar/polar y calidad",0,0,docs/,OK,ejecucion
+26,2026-10-28 03:44,10. Sitio Quarto,"Rediseno final del sitio: menu lateral, burbujas, graficas interactivas",0,0,docs/,OK,ejecucion
+27,2026-10-28 04:05,10. Sitio Quarto,"Rediseno final del sitio: menu lateral, burbujas, graficas interactivas",0,0,docs/,OK,ejecucion

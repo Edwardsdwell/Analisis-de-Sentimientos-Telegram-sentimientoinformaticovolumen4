@@ -1,0 +1,81 @@
+---
+title: "Visualizaciones interactivas"
+subtitle: "Pasa el mouse, haz clic en la leyenda, acércate con la rueda del mouse"
+---
+
+```{r}
+#| include: false
+suppressMessages({library(dplyr); library(tidyr); library(plotly); library(lubridate)})
+source("graficos_web.R", encoding = "UTF-8")
+L <- tryCatch(load_d(), error = function(e) NULL)
+f <- function(x) format(x, big.mark = " ", scientific = FALSE)
+ficha <- function(n, l, s = "", c = "#4cc9f0") sprintf('<div class="ficha" style="--c:%s"><div class="n">%s</div><div class="l">%s</div><div class="s">%s</div></div>', c, n, l, s)
+emo <- function(...) cat('<div class="emo">', paste0("<span>", c(...), "</span>", collapse = ""), '</div>', sep = "")
+```
+
+## Radar de emociones por temporada
+
+```{r}
+safe(gw_radar_temp())
+```
+
+<p class="interp">El perfil emocional es muy parecido entre Invierno, Verano y fuera de temporada; cambia el volumen, no la forma.</p>
+
+## Radar por periodo
+
+```{r}
+safe(gw_radar_per())
+```
+
+<p class="interp">Al aislar un periodo en la leyenda se ve que todos comparten una forma similar.</p>
+
+## Animación: las emociones periodo a periodo
+
+Pulsa **▶ Reproducir** o mueve la barra.
+
+```{r}
+safe(gw_animacion())
+```
+
+<p class="interp">Al avanzar los periodos las barras cambian poco: la estructura emocional del grupo es estable.</p>
+
+## Reloj de actividad
+
+```{r}
+safe(gw_polar_hora())
+```
+
+<p class="interp">La actividad se concentra en la mañana, con un máximo alrededor de las 10 h, y es muy baja de madrugada.</p>
+
+## Evolución mensual de cada sentimiento
+
+```{r}
+safe(gw_series(L))
+```
+
+<p class="interp">Los sentimientos se mantienen estables mes a mes, con picos en los meses de inscripción.</p>
+
+## Mapa de calor por periodo
+
+```{r}
+safe(gw_heat_periodos())
+```
+
+<p class="interp">La curiosidad domina todos los periodos (el color llega al máximo en 8 %); el resto de sentimientos se mantiene en valores bajos y estables.</p>
+
+## Flujo periodo → sentimiento
+
+```{r}
+safe(gw_sankey_per())
+```
+
+<p class="interp">Cada periodo reparte sus mensajes con sentimiento entre las mismas categorías; el grosor del flujo indica cuántos mensajes son.</p>
+
+## Cambio v1 → v2
+
+```{r}
+safe(gw_sankey_v1v2())
+```
+
+<p class="interp">Muestra a dónde fue cada mensaje al pasar de la versión 1 a la 2; buena parte de los cambios son mensajes que dejan de contarse por ser publicidad o no tener señal real.</p>
+

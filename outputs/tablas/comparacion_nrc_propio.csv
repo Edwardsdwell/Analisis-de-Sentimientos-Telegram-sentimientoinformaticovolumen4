@@ -1,0 +1,24 @@
+sentimiento,mensajes,fuente,pct
+enojo (NRC),925,NRC / syuzhet (8),0.04870471777590565
+anticipación (NRC),2228,NRC / syuzhet (8),0.11731255265374894
+aversión (NRC),376,NRC / syuzhet (8),0.019797809604043808
+miedo (NRC),1488,NRC / syuzhet (8),0.07834877843302443
+alegría (NRC),1344,NRC / syuzhet (8),0.07076663858466722
+tristeza (NRC),1803,NRC / syuzhet (8),0.09493470935130581
+sorpresa (NRC),1117,NRC / syuzhet (8),0.05881423757371525
+confianza (NRC),2897,NRC / syuzhet (8),0.15253791069924177
+alegría,334,Diccionario propio (15),0.017586352148272956
+gratitud,820,Diccionario propio (15),0.04317607413647852
+esperanza,85,Diccionario propio (15),0.0044755686604886265
+seguridad,120,Diccionario propio (15),0.006318449873631003
+admiración,33,Diccionario propio (15),0.0017375737152485256
+tranquilidad,87,Diccionario propio (15),0.004580876158382477
+sorpresa,61,Diccionario propio (15),0.0032118786857624265
+confusión,167,Diccionario propio (15),0.008793176074136478
+preocupación,303,Diccionario propio (15),0.01595408593091828
+tristeza,261,Diccionario propio (15),0.01374262847514743
+enojo,45,Diccionario propio (15),0.002369418702611626
+decepción,68,Diccionario propio (15),0.0035804549283909013
+cansancio,14,Diccionario propio (15),7.371524852569503e-4
+curiosidad,6848,Diccionario propio (15),0.36057287278854255
+frustración,450,Diccionario propio (15),0.02369418702611626

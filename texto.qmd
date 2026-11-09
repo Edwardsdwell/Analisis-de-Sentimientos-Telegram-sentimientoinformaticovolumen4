@@ -1,0 +1,80 @@
+---
+title: "Texto y temas"
+---
+
+```{r}
+#| include: false
+suppressMessages({library(dplyr); library(tidyr); library(plotly); library(lubridate)})
+source("graficos_web.R", encoding = "UTF-8")
+L <- tryCatch(load_d(), error = function(e) NULL)
+f <- function(x) format(x, big.mark = " ", scientific = FALSE)
+ficha <- function(n, l, s = "", c = "#4cc9f0") sprintf('<div class="ficha" style="--c:%s"><div class="n">%s</div><div class="l">%s</div><div class="s">%s</div></div>', c, n, l, s)
+emo <- function(...) cat('<div class="emo">', paste0("<span>", c(...), "</span>", collapse = ""), '</div>', sep = "")
+```
+
+## Palabras más frecuentes
+
+```{r}
+safe(gw_top_palabras())
+```
+
+<p class="interp">Las palabras más frecuentes giran en torno a materias, grupos y trámites de inscripción.</p>
+
+## Bigramas
+
+```{r}
+safe(gw_bigramas())
+```
+
+<p class="interp">Los pares de palabras más repetidos confirman los temas del chat: materias, cupos, clases y agradecimientos.</p>
+
+```{r}
+safe(gw_red_bigramas())
+```
+
+<p class="interp">Las palabras más conectadas forman grupos temáticos alrededor de materias y trámites.</p>
+
+## Palabras distintivas (TF-IDF)
+
+```{r}
+safe(gw_tfidf_periodos())
+```
+
+<p class="interp">Las palabras distintivas de cada periodo reflejan lo que se discutía en esa época (inscripciones, sorteos, cupos).</p>
+
+```{r}
+safe(gw_tfidf_temp())
+```
+
+<p class="interp">Cada temporada tiene su propio vocabulario característico.</p>
+
+## Ley de Zipf
+
+```{r}
+safe(gw_zipf())
+```
+
+<p class="interp">Pocas palabras se usan muchísimo y la gran mayoría casi nunca, como en cualquier texto natural.</p>
+
+## Lingüística superficial
+
+```{r}
+li <- tb("linguistica_superficial")
+knitr::kable(li, digits = 3)
+```
+
+## Temas del chat (LDA)
+
+::: {.tg}
+::: {.msg .azul data-t="🖼️"}
+<span class="who">Gráficas de temas</span>
+Estas gráficas vienen del modelo de temas (LDA) y se muestran como imagen.
+:::
+:::
+
+```{r}
+#| output: asis
+for (im in c("g_temas_lda", "g_tema_periodo", "g_tema_sentimiento", "g_nubes_sentimientos"))
+  if (file.exists(sprintf("outputs/graficos/%s.png", im))) cat(sprintf("![](outputs/graficos/%s.png)\n\n", im))
+```
+

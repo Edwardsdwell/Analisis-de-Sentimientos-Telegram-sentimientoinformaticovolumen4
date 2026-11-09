@@ -1,0 +1,108 @@
+---
+title: "Validación del diccionario"
+---
+
+```{r}
+#| include: false
+suppressMessages({library(dplyr); library(tidyr); library(plotly); library(lubridate)})
+source("graficos_web.R", encoding = "UTF-8")
+L <- tryCatch(load_d(), error = function(e) NULL)
+f <- function(x) format(x, big.mark = " ", scientific = FALSE)
+ficha <- function(n, l, s = "", c = "#4cc9f0") sprintf('<div class="ficha" style="--c:%s"><div class="n">%s</div><div class="l">%s</div><div class="s">%s</div></div>', c, n, l, s)
+emo <- function(...) cat('<div class="emo">', paste0("<span>", c(...), "</span>", collapse = ""), '</div>', sep = "")
+```
+
+::: {.tg}
+::: {.msg .azul data-t="📝"}
+<span class="who">¿Qué hicimos?</span>
+Etiquetamos **a mano 100 mensajes** (60 con señal y 40 sin señal, muestra estratificada) y comparamos lo que detecta el diccionario con lo que realmente expresan. Así sabemos **qué tan confiable es**.
+:::
+:::
+
+## Cómo se mide
+
+::: {.tg}
+::: {.msg .verde data-t="🎯"}
+<span class="who">Precisión</span>
+De lo que el diccionario marca, cuánto es correcto.
+:::
+::: {.msg .morada data-t="🔎"}
+<span class="who">Recall</span>
+De lo que realmente hay, cuánto encuentra.
+:::
+::: {.msg .naranja data-t="⚖️"}
+<span class="who">F1</span>
+Resumen de las dos.
+:::
+:::
+
+## Qué aporta cada mejora
+
+```{r}
+safe(gw_ablacion())
+```
+
+<p class="interp">Cada mejora al diccionario aumenta la precisión; la curva final muestra el efecto acumulado de todas.</p>
+
+```{r}
+a <- tb("validacion_ablacion"); a[, -1] <- lapply(a[, -1], function(x) round(x, 3))
+knitr::kable(a, col.names = c("Etapa", "Precisión", "Recall", "F1", "Acierto binario", "Coincidencia exacta"))
+```
+
+## F1 por sentimiento: versión 1 frente a versión 2
+
+```{r}
+safe(gw_f1())
+```
+
+<p class="interp">La versión 2 mejora el F1 en la mayoría de los sentimientos; los que tienen pocos casos son los menos estables.</p>
+
+```{r}
+p <- tb("validacion_v1_v2_por_sentimiento"); p[, c("precision", "recall", "F1")] <- lapply(p[, c("precision", "recall", "F1")], function(x) round(x, 2))
+knitr::kable(p[p$version == "v2", c("sentimiento", "TP", "FP", "FN", "precision", "recall", "F1")], col.names = c("Sentimiento", "TP", "FP", "FN", "Precisión", "Recall", "F1"))
+```
+
+## Cambios hechos al diccionario (v1 → v2)
+
+```{r}
+#| output: asis
+cat("<details class='det'><summary>Ver la lista de cambios</summary>\n\n")
+print(knitr::kable(tb("lexicon_v2_cambios")))
+cat("\n\n</details>\n")
+```
+
+## Efecto en todo el corpus
+
+```{r}
+safe(gw_comparacion())
+```
+
+<p class="interp">El mayor cambio entre versiones está en la curiosidad, que sube mucho al reconocer las preguntas como tales.</p>
+
+## Sankey entre métodos: v1 → v2
+
+Cada flujo muestra a qué sentimiento dominante pasó un mensaje al cambiar de versión (incluye "publicidad (excluida)" y "sin señal").
+
+```{r}
+safe(gw_sankey_v1v2())
+```
+
+<p class="interp">Muestra a dónde fue cada mensaje al pasar de la versión 1 a la 2; buena parte de los cambios son mensajes que dejan de contarse por ser publicidad o no tener señal real.</p>
+
+## Límites de esta validación
+
+::: {.tg}
+::: {.msg .naranja data-t="⚠️"}
+<span class="who">Misma muestra</span>
+La evaluación es **sobre la misma muestra** con la que se ajustó el diccionario, por lo que los números son algo optimistas.
+:::
+::: {.msg .naranja data-t="⚠️"}
+<span class="who">Un solo etiquetador</span>
+Etiquetó **una sola persona**; con dos se podría medir el acuerdo (κ de Cohen).
+:::
+::: {.msg .naranja data-t="⚠️"}
+<span class="who">Pocos casos</span>
+Son 100 mensajes: las cifras por sentimiento con pocos casos son orientativas.
+:::
+:::
+

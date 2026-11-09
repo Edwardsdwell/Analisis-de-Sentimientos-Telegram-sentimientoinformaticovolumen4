@@ -1,0 +1,105 @@
+---
+title: "Sugerencias"
+subtitle: "Análisis adicionales que se pueden usar para tomar decisiones"
+---
+
+```{r}
+#| include: false
+suppressMessages({library(dplyr); library(tidyr); library(plotly); library(lubridate)})
+source("graficos_web.R", encoding = "UTF-8")
+L <- tryCatch(load_d(), error = function(e) NULL)
+f <- function(x) format(x, big.mark = " ", scientific = FALSE)
+ficha <- function(n, l, s = "", c = "#4cc9f0") sprintf('<div class="ficha" style="--c:%s"><div class="n">%s</div><div class="l">%s</div><div class="s">%s</div></div>', c, n, l, s)
+emo <- function(...) cat('<div class="emo">', paste0("<span>", c(...), "</span>", collapse = ""), '</div>', sep = "")
+```
+
+## Días pico (preocupación, frustración y confusión)
+
+```{r}
+safe(gw_picos_dia(L, "preocupación", "#f4a261"))
+```
+
+<p class="interp">Los días con más preocupación coinciden con fechas de inscripción y cupos.</p>
+
+```{r}
+safe(gw_picos_dia(L, "frustración", "#ff6b6b"))
+```
+
+<p class="interp">La frustración se dispara en días puntuales, casi siempre por cupos agotados.</p>
+
+```{r}
+safe(gw_picos_dia(L, "confusión", "#c77dff"))
+```
+
+<p class="interp">La confusión aparece en pocos mensajes y días sueltos; se lee con cautela.</p>
+
+::: {.tg}
+::: {.msg .rojo data-t="📅"}
+<span class="who">Picos</span>
+Los picos de frustración y preocupación coinciden con momentos de inscripción, cupos y pagos.
+:::
+:::
+
+## Cuándo se escribe y cómo cambian los sentimientos
+
+```{r}
+safe(gw_heat_hora_dia(L))
+```
+
+<p class="interp">La actividad es mayor en las mañanas de los días de semana.</p>
+
+```{r}
+safe(gw_sent_hora(L))
+```
+
+<p class="interp">Los sentimientos mantienen un perfil parecido a lo largo del día; la curiosidad es la más alta en casi todas las horas.</p>
+
+## ¿Quién recibe respuesta y qué tan rápido?
+
+```{r}
+safe(gw_respuesta())
+```
+
+<p class="interp">Solo una cuarta parte de los mensajes recibe respuesta, y la mediana de espera es de unos 6 minutos.</p>
+
+## Índice emocional
+
+```{r}
+safe(gw_indice_mensual())
+```
+
+<p class="interp">El índice se mueve cerca de cero: hay un equilibrio entre emociones positivas y negativas a lo largo del tiempo.</p>
+
+```{r}
+safe(gw_pos_neg())
+```
+
+<p class="interp">Las emociones positivas y negativas suben y bajan juntas, según el volumen de mensajes de cada mes.</p>
+
+```{r}
+safe(gw_indice_periodos())
+```
+
+<p class="interp">Verano 2025-26 es el periodo más negativo; fuera de temporada e Invierno 2024 son los más positivos.</p>
+
+::: {.tg}
+::: {.msg .verde data-t="⚖️"}
+<span class="who">Equilibrio</span>
+Con el diccionario v2 el índice emocional general queda cerca de cero: hay un equilibrio entre emociones positivas y negativas, y el verano 2025-26 es el periodo más negativo.
+:::
+:::
+
+## Núcleo activo frente al resto
+
+```{r}
+safe(gw_nucleo())
+```
+
+<p class="interp">Los usuarios más activos expresan sentimientos con una frecuencia parecida a la del resto.</p>
+
+```{r}
+safe(gw_top_usuarios(L))
+```
+
+<p class="interp">Pocos usuarios concentran la expresión de sentimientos; los puntos grandes expresan más variedad.</p>
+

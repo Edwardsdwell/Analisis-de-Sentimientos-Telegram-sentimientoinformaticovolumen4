@@ -1,0 +1,93 @@
+---
+title: "Calidad de datos y limpieza"
+---
+
+```{r}
+#| include: false
+suppressMessages({library(dplyr); library(tidyr); library(plotly); library(lubridate)})
+source("graficos_web.R", encoding = "UTF-8")
+L <- tryCatch(load_d(), error = function(e) NULL)
+f <- function(x) format(x, big.mark = " ", scientific = FALSE)
+ficha <- function(n, l, s = "", c = "#4cc9f0") sprintf('<div class="ficha" style="--c:%s"><div class="n">%s</div><div class="l">%s</div><div class="s">%s</div></div>', c, n, l, s)
+emo <- function(...) cat('<div class="emo">', paste0("<span>", c(...), "</span>", collapse = ""), '</div>', sep = "")
+```
+
+::: {.tg}
+::: {.msg .verde data-t="🧹 ✓✓"}
+<span class="who">Principio</span>
+**No se elimina ninguna fila**: el ruido se *marca* con columnas verdadero/falso y se puede filtrar o revertir.
+:::
+:::
+
+## Embudo de datos
+
+```{r}
+#| output: asis
+e <- tb("calidad_embudo")
+cat('<div class="fichas">')
+cols <- c("#4cc9f0", "#4895ef", "#7b6cf6", "#c77dff", "#f72585")
+for (i in seq_len(nrow(e))) cat(ficha(f(e$n[i]), e$paso[i], paste0(e$pct_del_total[i], " % del total"), cols[(i - 1) %% 5 + 1]))
+cat('</div>\n')
+```
+
+```{r}
+safe(gw_embudo())
+```
+
+<p class="interp">De 28 000 elementos exportados quedan 19 317 mensajes analizables; casi la mitad de ellos (9 093) expresa al menos un sentimiento.</p>
+
+## Marcas de limpieza
+
+```{r}
+#| output: asis
+dd <- L$d; msg <- sum(dd$es_msg)
+m <- tibble::tibble(
+  Marca = c("Eventos de servicio", "Sin texto", "Solo multimedia", "Solo enlace", "Solo emoji", "Muy corto (1-2 palabras)",
+            "Repetido (3+ palabras)", "En ráfaga (5+ seguidos)", "Publicidad", "Mensajes con emojis"),
+  Filas = c(sum(!dd$es_msg), sum(dd$sin_texto), sum(dd$solo_multimedia), sum(dd$solo_link), sum(dd$solo_emoji),
+            sum(dd$muy_corto), sum(dd$es_repetido), sum(dd$rafaga), sum(dd$es_publicidad), sum(dd$apto_emoji)))
+pal <- c("#4cc9f0", "#c77dff", "#ff9ff3", "#06d6a0", "#ffd166", "#f4a261", "#ff6b6b", "#74c0fc", "#ff5d73", "#a8e063")
+cat('<div class="fichas">')
+for (i in seq_len(nrow(m))) cat(ficha(f(m$Filas[i]), m$Marca[i], if (i > 1) paste0(round(m$Filas[i] / msg * 100, 1), " % de los mensajes") else "no son mensajes", pal[i]))
+cat('</div>\n')
+```
+
+Un mismo mensaje puede tener varias marcas. Los anuncios largos y la publicidad se marcan y no se analizan para sentimientos.
+
+## Enlaces: qué se comparte (solo dominios)
+
+```{r}
+safe(gw_dominios())
+```
+
+<p class="interp">Casi dos de cada tres enlaces son invitaciones de WhatsApp, seguidas de formularios; por eso la publicidad se excluyó del análisis.</p>
+
+## Puntaje de spam y sensibilidad del umbral
+
+::: {.tg}
+::: {.msg .azul data-t="ℹ️"}
+<span class="who">¿Cómo se lee?</span>
+Cada mensaje recibe un puntaje (enlaces, invitaciones, muchos emojis, MAYÚSCULAS, repetido, muy largo). El filtro final solo saca invitaciones y convocatorias; la gráfica muestra cuánto coincide el puntaje con ese filtro según el umbral elegido.
+:::
+:::
+
+```{r}
+safe(gw_spam())
+```
+
+<p class="interp">Con umbrales bajos el puntaje marca demasiados mensajes (baja precisión); al subirlo coincide mejor con el filtro de publicidad sin perder casi nada.</p>
+
+## Chequeos de integridad
+
+```{r}
+#| output: asis
+ch <- tb("calidad_chequeos")
+okn <- sum(ch$resultado == "OK")
+cat('<div class="chips"><span class="chip" style="--c:#2ee6a6">', okn, ' de ', nrow(ch), ' chequeos en OK<b>✔</b></span></div>\n', sep = "")
+cat('<div class="chk">')
+for (i in seq_len(nrow(ch)))
+  cat(sprintf('<div><span class="%s">%s</span> <b>%s</b> %s<small>%s</small></div>', ifelse(ch$resultado[i] == "OK", "ok", "no"),
+              ifelse(ch$resultado[i] == "OK", "✔", "✘"), ch$chequeo[i], ch$descripcion[i], ch$detalle[i]))
+cat('</div>\n')
+```
+

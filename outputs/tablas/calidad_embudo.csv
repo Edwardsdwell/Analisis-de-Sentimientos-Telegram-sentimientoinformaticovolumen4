@@ -1,0 +1,6 @@
+paso,n,pct_del_total,perdidos
+Elementos del JSON,28000,100,0
+Mensajes (no servicio),23462,83.8,4538
+Mensajes con texto,22071,78.8,1391
+Usables (sin publicidad ni ruido),19317,69,2754
+Usables con al menos 1 sentimiento,9093,32.5,10224

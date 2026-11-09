@@ -1,0 +1,46 @@
+periodo_tipo,sentimiento,tasa
+Fuera de temporada,admiración,0.3949447077409162
+Fuera de temporada,alegría,3.39652448657188
+Fuera de temporada,cansancio,0
+Fuera de temporada,confusión,0.8688783570300158
+Fuera de temporada,curiosidad,36.17693522906793
+Fuera de temporada,decepción,0.5529225908372828
+Fuera de temporada,enojo,0.47393364928909953
+Fuera de temporada,esperanza,0.07898894154818326
+Fuera de temporada,frustración,0.7898894154818324
+Fuera de temporada,gratitud,5.608214849921011
+Fuera de temporada,preocupación,1.9747235387045814
+Fuera de temporada,seguridad,0.7109004739336493
+Fuera de temporada,sorpresa,0.23696682464454977
+Fuera de temporada,tranquilidad,0.631911532385466
+Fuera de temporada,tristeza,1.8957345971563981
+Invierno,admiración,0.19567219152854515
+Invierno,alegría,1.8761510128913446
+Invierno,cansancio,0.1841620626151013
+Invierno,confusión,0.817219152854512
+Invierno,curiosidad,37.166206261510126
+Invierno,decepción,0.3337937384898711
+Invierno,enojo,0.23020257826887663
+Invierno,esperanza,0.5294659300184162
+Invierno,frustración,2.1639042357274403
+Invierno,gratitud,3.8904235727440146
+Invierno,preocupación,1.1395027624309393
+Invierno,seguridad,0.5524861878453038
+Invierno,sorpresa,0.3913443830570903
+Invierno,tranquilidad,0.49493554327808476
+Invierno,tristeza,1.4617863720073665
+Verano,admiración,0.2242870874719641
+Verano,alegría,1.762255687279718
+Verano,cansancio,0.04272134999465983
+Verano,confusión,1.1000747623624907
+Verano,curiosidad,33.9527929082559
+Verano,decepción,0.4912955249385881
+Verano,enojo,0.26700843746662395
+Verano,esperanza,0.4165331624479333
+Verano,frustración,2.7021253871622344
+Verano,gratitud,4.496422086937947
+Verano,preocupación,2.0826658122396666
+Verano,seguridad,0.6835415999145573
+Verano,sorpresa,0.4485741749439282
+Verano,tranquilidad,0.4058528249492684
+Verano,tristeza,1.6874933247890633

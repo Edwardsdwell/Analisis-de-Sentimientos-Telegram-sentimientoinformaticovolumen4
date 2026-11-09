@@ -1,0 +1,424 @@
+﻿"sentimiento","tipo","patron","peso"
+"alegría","palabra","\bjaj\w*",1
+"alegría","palabra","\bjeje\w*",1
+"alegría","palabra","\bjiji\w*",1
+"alegría","palabra","\bxd\b",1
+"alegría","palabra","\bfeliz\b",1
+"alegría","palabra","\bfelices\b",1
+"alegría","palabra","\balegr\w*",1
+"alegría","palabra","\bgenial\b",1
+"alegría","palabra","\bexcelente\b",1
+"alegría","palabra","\bmuy bien\b",1
+"alegría","palabra","\bque bien\b",1
+"alegría","palabra","\bbuenisimo\w*",1
+"alegría","palabra","\bchevere\b",1
+"alegría","palabra","\bbacan\b",1
+"alegría","palabra","\bdivertid\w*",1
+"alegría","palabra","\brisa\w*",1
+"alegría","palabra","\byupi\b",1
+"alegría","palabra","\bviva\b",1
+"alegría","palabra","\bcelebr\w*",1
+"alegría","palabra","\bfestej\w*",1
+"alegría","palabra","\bcontento\w*",1
+"alegría","palabra","\bcontenta\w*",1
+"alegría","palabra","\bme encanta\w*",1
+"alegría","palabra","\bencantad\w*",1
+"alegría","palabra","\baprobe\b",1
+"alegría","palabra","\baprobado\w*",1
+"alegría","palabra","\blo logre\b",1
+"alegría","palabra","\blo logramos\b",1
+"alegría","palabra","\bexcelente dia\b",1
+"gratitud","palabra","\bgracias\w*",1
+"gratitud","palabra","\bgraciass\w*",1
+"gratitud","palabra","\bagradec\w*",1
+"gratitud","palabra","\bagradezco\b",1
+"gratitud","palabra","\bmil gracias\b",1
+"gratitud","palabra","\bbendic\w*",1
+"gratitud","palabra","\bdios le pague\b",1
+"gratitud","palabra","\bdios se lo pague\b",1
+"gratitud","palabra","\bse agradece\b",1
+"gratitud","palabra","\bmuy amable\b",1
+"gratitud","palabra","\bamable\b",1
+"gratitud","palabra","\bgracias a\b",1
+"gratitud","palabra","\bse los agradezco\b",1
+"esperanza","palabra","\bespero\b",1
+"esperanza","palabra","\besperemos\b",1
+"esperanza","palabra","\besperanza\w*",1
+"esperanza","palabra","\bojala\w*",1
+"esperanza","palabra","\bconfio\b",1
+"esperanza","palabra","\bconfiemos\b",1
+"esperanza","palabra","\banimo\w*",1
+"esperanza","palabra","\bsuerte\b",1
+"esperanza","palabra","\bexito\w*",1
+"esperanza","palabra","\bdios quiera\b",1
+"esperanza","palabra","\blo lograremos\b",1
+"esperanza","palabra","\bvamos a poder\b",1
+"esperanza","palabra","\bno se rindan\b",1
+"esperanza","palabra","\bfuerza\b",1
+"esperanza","palabra","\bcon fe\b",1
+"esperanza","palabra","\bbuena suerte\b",1
+"esperanza","palabra","\bmucha suerte\b",1
+"seguridad","palabra","\bclaro que si\b",1
+"seguridad","palabra","\bpor supuesto\b",1
+"seguridad","palabra","\bsin duda\b",1
+"seguridad","palabra","\bconfirmado\w*",1
+"seguridad","palabra","\bgarantizad\w*",1
+"seguridad","palabra","\bestoy seguro\b",1
+"seguridad","palabra","\bestoy segura\b",1
+"seguridad","palabra","\bdefinitivamente\b",1
+"seguridad","palabra","\bobvio\b",1
+"seguridad","palabra","\bexacto\b",1
+"seguridad","palabra","\bcorrecto\b",1
+"seguridad","palabra","\basegur\w*",1
+"seguridad","palabra","\bcerteza\b",1
+"seguridad","palabra","\bconfirmo\b",1
+"seguridad","palabra","\bes verdad\b",1
+"seguridad","palabra","\bconfiable\w*",1
+"seguridad","palabra","\bverificad\w*",1
+"seguridad","palabra","\bcien por ciento\b",1
+"admiración","palabra","\badmir\w*",1
+"admiración","palabra","\bfelicitaciones\b",1
+"admiración","palabra","\bfelicit\w*",1
+"admiración","palabra","\bcrack\b",1
+"admiración","palabra","\bcapo\b",1
+"admiración","palabra","\bgenio\w*",1
+"admiración","palabra","\bmaestro\b",1
+"admiración","palabra","\bbuen trabajo\b",1
+"admiración","palabra","\bexcelente trabajo\b",1
+"admiración","palabra","\bbuenazo\w*",1
+"admiración","palabra","\bespectacular\w*",1
+"admiración","palabra","\bimpresionante\w*",1
+"admiración","palabra","\brespeto\b",1
+"admiración","palabra","\borgullo\w*",1
+"admiración","palabra","\borgullos\w*",1
+"admiración","palabra","\bbravo\b",1
+"admiración","palabra","\baplaus\w*",1
+"admiración","palabra","\bbrillante\w*",1
+"admiración","palabra","\btalentos\w*",1
+"admiración","palabra","\bun monstruo\b",1
+"admiración","palabra","\bincreible trabajo\b",1
+"tranquilidad","palabra","\btranquil\w*",1
+"tranquilidad","palabra","\btranqui\b",1
+"tranquilidad","palabra","\bcalma\w*",1
+"tranquilidad","palabra","\brelaj\w*",1
+"tranquilidad","palabra","\bsin problema\w*",1
+"tranquilidad","palabra","\bno hay problema\b",1
+"tranquilidad","palabra","\bno pasa nada\b",1
+"tranquilidad","palabra","\bcon calma\b",1
+"tranquilidad","palabra","(?<!en )\bpaz\b",1
+"tranquilidad","palabra","\bdescansa\w*",1
+"tranquilidad","palabra","\bdespreocup\w*",1
+"tranquilidad","palabra","\bsin apuro\b",1
+"tranquilidad","palabra","\bsin prisa\b",1
+"tranquilidad","palabra","\btodo bien\b",1
+"tranquilidad","palabra","\bno\s+se\s+preocup\w*",1
+"tranquilidad","palabra","\bno\s+te\s+preocup\w*",1
+"tranquilidad","palabra","\bno\s+hay\s+apuro",1
+"sorpresa","palabra","\bwo+w+\b",1
+"sorpresa","palabra","\buy+\b",1
+"sorpresa","palabra","\bomg\b",1
+"sorpresa","palabra","\bincreible\b",1
+"sorpresa","palabra","\bno puedo creer\b",1
+"sorpresa","palabra","\bno lo puedo creer\b",1
+"sorpresa","palabra","\bsorpres\w*",1
+"sorpresa","palabra","\binesperad\w*",1
+"sorpresa","palabra","\bde repente\b",1
+"sorpresa","palabra","\ben serio\b",1
+"sorpresa","palabra","\benserio\b",1
+"sorpresa","palabra","\bde verdad\b",1
+"sorpresa","palabra","\basombr\w*",1
+"sorpresa","palabra","\bimpact\w*",1
+"sorpresa","palabra","\bno sabia\b",1
+"sorpresa","palabra","\bno lo sabia\b",1
+"sorpresa","palabra","\bsera posible\b",1
+"sorpresa","palabra","\bque fuerte\b",1
+"confusión","palabra","\bno entiendo\b",1
+"confusión","palabra","\bno entendi\b",1
+"confusión","palabra","\bno comprendo\b",1
+"confusión","palabra","\bconfund\w*",1
+"confusión","palabra","\bconfusion\w*",1
+"confusión","palabra","\bno se como\b",1
+"confusión","palabra","\bno se que\b",1
+"confusión","palabra","\bno se donde\b",1
+"confusión","palabra","\bno se cual\b",1
+"confusión","palabra","\bperdido\b",1
+"confusión","palabra","\bperdida\b",1
+"confusión","palabra","\bcomo asi\b",1
+"confusión","palabra","\bque paso\b",1
+"confusión","palabra","\bno me queda claro\b",1
+"confusión","palabra","\bno esta claro\b",1
+"confusión","palabra","\bduda\w*",1
+"confusión","palabra","\bdudo\b",1
+"confusión","palabra","\bno logro\b",1
+"confusión","palabra","\bno encuentro\b",1
+"confusión","palabra","\bque significa\b",1
+"confusión","palabra","\bayuda\w*",1
+"confusión","palabra","\bayudenme\b",1
+"confusión","palabra","\bauxilio\b",1
+"preocupación","palabra","(?<!no se )(?<!no te )(?<!no )\bpreocup\w*",1
+"preocupación","palabra","\bmiedo\w*",1
+"preocupación","palabra","\bnervios\w*",1
+"preocupación","palabra","\bansied\w*",1
+"preocupación","palabra","\bansios\w*",1
+"preocupación","palabra","\bangusti\w*",1
+"preocupación","palabra","\burgente\w*",1
+"preocupación","palabra","\burge\b",1
+"preocupación","palabra","\btemo\b",1
+"preocupación","palabra","\btemor\w*",1
+"preocupación","palabra","\briesgo\w*",1
+"preocupación","palabra","\bpeligro\w*",1
+"preocupación","palabra","\bcuidado\b",1
+"preocupación","palabra","\bultimo dia\b",1
+"preocupación","palabra","\bllego tarde\b",1
+"preocupación","palabra","\bno llego\b",1
+"preocupación","palabra","\bno alcanzo\b",1
+"preocupación","palabra","\bno me da el tiempo\b",1
+"preocupación","palabra","\bestres\w*",1
+"preocupación","palabra","\breprobar\b",1
+"preocupación","palabra","\breprobare\b",1
+"preocupación","palabra","\bse acaba el tiempo\b",1
+"preocupación","palabra","\bfalta poco\b",1
+"preocupación","palabra","\binquiet\w*",1
+"preocupación","palabra","(?<!sin )(?<!no hay )\bproblema\w*",1
+"tristeza","palabra","\btrist\w*",1
+"tristeza","palabra","\bllor\w*",1
+"tristeza","palabra","\bpena\b",1
+"tristeza","palabra","\blamento\b",1
+"tristeza","palabra","\blamentabl\w*",1
+"tristeza","palabra","\blastima\w*",1
+"tristeza","palabra","\bdeprim\w*",1
+"tristeza","palabra","\bdepre\b",1
+"tristeza","palabra","\bduele\b",1
+"tristeza","palabra","\bdolor\w*",1
+"tristeza","palabra","\bsufr\w*",1
+"tristeza","palabra","\bdescanse en paz\b",1
+"tristeza","palabra","\bqepd\b",1
+"tristeza","palabra","\bfallec\w*",1
+"tristeza","palabra","\bmurio\b",1
+"tristeza","palabra","\bcondolencias\b",1
+"tristeza","palabra","\bluto\b",1
+"tristeza","palabra","\bdesanim\w*",1
+"tristeza","palabra","\bque mal\b",1
+"tristeza","palabra","\bme siento mal\b",1
+"tristeza","palabra","\bme fue mal\b",1
+"enojo","palabra","\benoj\w*",1
+"enojo","palabra","\benfad\w*",1
+"enojo","palabra","\bmolest\w*",1
+"enojo","palabra","\bbronca\w*",1
+"enojo","palabra","\brabia\w*",1
+"enojo","palabra","\bfurios\w*",1
+"enojo","palabra","\bodio\b",1
+"enojo","palabra","\bharto\b",1
+"enojo","palabra","\bharta\b",1
+"enojo","palabra","\bhartos\b",1
+"enojo","palabra","\bestupid\w*",1
+"enojo","palabra","\bidiota\w*",1
+"enojo","palabra","\bimbecil\w*",1
+"enojo","palabra","\bmierda\b",1
+"enojo","palabra","\bcarajo\w*",1
+"enojo","palabra","\bmaldit\w*",1
+"enojo","palabra","\bchucha\b",1
+"enojo","palabra","\bputa\b",1
+"enojo","palabra","\bjoder\b",1
+"enojo","palabra","\bpesim\w*",1
+"enojo","palabra","\binaceptable\w*",1
+"enojo","palabra","\babusiv\w*",1
+"enojo","palabra","\bya basta\b",1
+"enojo","palabra","\bfastidi\w*",1
+"enojo","palabra","\birrit\w*",1
+"enojo","palabra","\bindignad\w*",1
+"decepción","palabra","\bdecepcion\w*",1
+"decepción","palabra","\bdesilusion\w*",1
+"decepción","palabra","\bdefraud\w*",1
+"decepción","palabra","\besperaba mas\b",1
+"decepción","palabra","\bque decepcion\b",1
+"decepción","palabra","\bfalso\b",1
+"decepción","palabra","\bfalsa\b",1
+"decepción","palabra","\bengan\w*",1
+"decepción","palabra","\bestaf\w*",1
+"decepción","palabra","\bmentiros\w*",1
+"decepción","palabra","\bincumpl\w*",1
+"decepción","palabra","\bno cumpl\w*",1
+"decepción","palabra","\bburla\w*",1
+"decepción","palabra","\bno vale la pena\b",1
+"decepción","palabra","\bme fallaron\b",1
+"decepción","palabra","\bfallaron\b",1
+"decepción","palabra","\breprobe\b",1
+"decepción","palabra","\breprobado\w*",1
+"decepción","palabra","\bno aprobe\b",1
+"decepción","palabra","\bno pase\b",1
+"decepción","palabra","\bperdi la materia\b",1
+"decepción","palabra","\bmala calidad\b",1
+"cansancio","palabra","\bcansad\w*",1
+"cansancio","palabra","\bcansanci\w*",1
+"cansancio","palabra","\bagotad\w*",1
+"cansancio","palabra","\bagotamiento\b",1
+"cansancio","palabra","\btengo sueno\b",1
+"cansancio","palabra","\bme muero de sueno\b",1
+"cansancio","palabra","\bsin dormir\b",1
+"cansancio","palabra","\bdesvel\w*",1
+"cansancio","palabra","\btrasnoch\w*",1
+"cansancio","palabra","\bextenuad\w*",1
+"cansancio","palabra","\bagobi\w*",1
+"cansancio","palabra","\bfatiga\w*",1
+"cansancio","palabra","\bno doy mas\b",1
+"cansancio","palabra","\bflojera\w*",1
+"cansancio","palabra","\bpereza\b",1
+"cansancio","palabra","\bexhaust\w*",1
+"cansancio","palabra","\bmadrug\w*",1
+"curiosidad","palabra","\bcurios\w*",1
+"curiosidad","palabra","\bme pregunto\b",1
+"curiosidad","palabra","\bquisiera saber\b",1
+"curiosidad","palabra","\bquiero saber\b",1
+"curiosidad","palabra","\bme gustaria saber\b",1
+"curiosidad","palabra","\bme interesa\w*",1
+"curiosidad","palabra","\binteresante\w*",1
+"curiosidad","palabra","\binteresad\w*",1
+"curiosidad","palabra","\bcomo funciona\b",1
+"curiosidad","palabra","\bpor que\b",1
+"curiosidad","palabra","\bsabias que\b",1
+"curiosidad","palabra","\bcuentame\b",1
+"curiosidad","palabra","\ben que consiste\b",1
+"curiosidad","palabra","\bde que trata\b",1
+"curiosidad","palabra","\bme intriga\b",1
+"curiosidad","palabra","\bintrigante\w*",1
+"curiosidad","palabra","\binvestig\w*",1
+"curiosidad","palabra","\bquiero aprender\b",1
+"curiosidad","palabra","\bquisiera aprender\b",1
+"curiosidad","palabra","\bdescubr\w*",1
+"frustración","palabra","\bfrustr\w*",1
+"frustración","palabra","\bno funciona\b",1
+"frustración","palabra","\bno sirve\b",1
+"frustración","palabra","\bno carga\b",1
+"frustración","palabra","\bno abre\b",1
+"frustración","palabra","\botra vez\b",1
+"frustración","palabra","\bde nuevo\b",1
+"frustración","palabra","\bsiempre lo mismo\b",1
+"frustración","palabra","\bno hay caso\b",1
+"frustración","palabra","\binutil\w*",1
+"frustración","palabra","\bme rindo\b",1
+"frustración","palabra","\bno puedo mas\b",1
+"frustración","palabra","\bimposible\w*",1
+"frustración","palabra","\bno me deja\b",1
+"frustración","palabra","\berror\w*",1
+"frustración","palabra","\bfalla\w*",1
+"frustración","palabra","\bse cayo\b",1
+"frustración","palabra","\bse cae\b",1
+"frustración","palabra","\bno responde\b",1
+"frustración","palabra","\bno entra\b",1
+"frustración","palabra","\bno me sale\b",1
+"alegría","emoji","😀",1
+"alegría","emoji","😃",1
+"alegría","emoji","😄",1
+"alegría","emoji","😁",1
+"alegría","emoji","😆",1
+"alegría","emoji","😂",1
+"alegría","emoji","🤣",1
+"alegría","emoji","😊",1
+"alegría","emoji","🙂",1
+"alegría","emoji","🥳",1
+"alegría","emoji","🎉",1
+"alegría","emoji","😹",1
+"alegría","emoji","🤗",1
+"alegría","emoji","😅",1
+"gratitud","emoji","🙏",1
+"gratitud","emoji","🤝",1
+"gratitud","emoji","💐",1
+"gratitud","emoji","❤",1
+"gratitud","emoji","💙",1
+"gratitud","emoji","💚",1
+"gratitud","emoji","💛",1
+"gratitud","emoji","🧡",1
+"gratitud","emoji","💜",1
+"gratitud","emoji","🫶",1
+"gratitud","emoji","🥰",1
+"gratitud","emoji","😘",1
+"esperanza","emoji","🤞",1
+"esperanza","emoji","🍀",1
+"esperanza","emoji","🌈",1
+"esperanza","emoji","🕊",1
+"seguridad","emoji","👍",1
+"seguridad","emoji","✅",1
+"seguridad","emoji","☑",1
+"seguridad","emoji","✔",1
+"seguridad","emoji","👌",1
+"seguridad","emoji","🔒",1
+"admiración","emoji","😍",1
+"admiración","emoji","🤩",1
+"admiración","emoji","🔥",1
+"admiración","emoji","💪",1
+"admiración","emoji","👏",1
+"admiración","emoji","🏆",1
+"admiración","emoji","💯",1
+"admiración","emoji","🫡",1
+"tranquilidad","emoji","😌",1
+"tranquilidad","emoji","😇",1
+"tranquilidad","emoji","🧘",1
+"tranquilidad","emoji","☺",1
+"tranquilidad","emoji","🌿",1
+"tranquilidad","emoji","☕",1
+"sorpresa","emoji","😮",1
+"sorpresa","emoji","😲",1
+"sorpresa","emoji","😯",1
+"sorpresa","emoji","😱",1
+"sorpresa","emoji","🤯",1
+"sorpresa","emoji","😳",1
+"sorpresa","emoji","🙀",1
+"sorpresa","emoji","❗",1
+"confusión","emoji","🤔",1
+"confusión","emoji","😕",1
+"confusión","emoji","🤷",1
+"confusión","emoji","❓",1
+"confusión","emoji","😵",1
+"preocupación","emoji","😟",1
+"preocupación","emoji","😰",1
+"preocupación","emoji","😨",1
+"preocupación","emoji","😧",1
+"preocupación","emoji","😬",1
+"preocupación","emoji","⚠",1
+"preocupación","emoji","🚨",1
+"preocupación","emoji","😥",1
+"tristeza","emoji","😢",1
+"tristeza","emoji","😭",1
+"tristeza","emoji","😞",1
+"tristeza","emoji","😔",1
+"tristeza","emoji","☹",1
+"tristeza","emoji","🙁",1
+"tristeza","emoji","💔",1
+"tristeza","emoji","🥺",1
+"tristeza","emoji","😿",1
+"enojo","emoji","😡",1
+"enojo","emoji","🤬",1
+"enojo","emoji","😠",1
+"decepción","emoji","👎",1
+"enojo","emoji","😤",1
+"enojo","emoji","💢",1
+"enojo","emoji","🖕",1
+"decepción","emoji","😒",1
+"decepción","emoji","🙄",1
+"decepción","emoji","😑",1
+"decepción","emoji","😐",1
+"decepción","emoji","🤦",1
+"decepción","emoji","🤡",1
+"cansancio","emoji","😴",1
+"cansancio","emoji","😪",1
+"cansancio","emoji","🥱",1
+"cansancio","emoji","😩",1
+"cansancio","emoji","😫",1
+"cansancio","emoji","💤",1
+"curiosidad","emoji","🧐",1
+"curiosidad","emoji","👀",1
+"curiosidad","emoji","🤓",1
+"curiosidad","emoji","🔍",1
+"frustración","emoji","😖",1
+"frustración","emoji","😣",1
+"frustración","emoji","😓",1
+"frustración","emoji","🙃",1
+"seguridad","palabra","\bseguro que\b",1
+"seguridad","palabra","\bsegurisimo\w*",1
+"curiosidad","palabra","\balguien sabe\b",1
+"curiosidad","palabra","\bcomo se hace\b",1
+"curiosidad","palabra","\bcomo hago\b",1
+"curiosidad","palabra","\bme explican\b",1
+"curiosidad","palabra","\balguien me explica\b",1
+"enojo","emoji","🤮",1

@@ -1,0 +1,10 @@
+data/
+validacion/
+.Rproj.user/
+.Rhistory
+.RData
+*.rds
+/.quarto/
+_nombres_LOCAL.rds
+
+**/*.quarto_ipynb

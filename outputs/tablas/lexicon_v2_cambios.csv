@@ -1,0 +1,30 @@
+accion,sentimiento,tipo,patron,peso,motivo
+quitar,confusión,palabra,\bayuda\w*,NA,'si alguien necesita ayuda' ofrece ayuda; no es confusión
+agregar,confusión,palabra,\bnecesito ayuda\b,1,pedir ayuda en primera persona
+agregar,confusión,palabra,\bme pueden ayudar\b,1,pedir ayuda en primera persona
+quitar,confusión,palabra,\bduda\w*,NA,'cualquier duda escribe' es cortesía
+agregar,confusión,palabra,\b(tengo|tenia|surgio|surge) (una |alguna )?duda\w*,1,duda propia
+quitar,curiosidad,palabra,\bpor que\b,NA,'por que' sin tilde suele ser 'porque'; las preguntas se detectan con la regla de pregunta
+quitar,esperanza,palabra,\bsuerte\b,NA,'mala suerte' no es esperanza
+agregar,esperanza,palabra,(?<!mala )(?<!pura )\bsuerte\b,0.5,suerte débil; excluye 'mala/pura suerte'
+agregar,frustración,palabra,\bmala suerte\b,1,mala suerte = frustración
+quitar,sorpresa,palabra,\ben serio\b,NA,'en serio' es muletilla; solo cuenta con ? o !
+quitar,sorpresa,palabra,\benserio\b,NA,'enserio' es muletilla
+agregar,sorpresa,palabra,\ben ?serio ?[?!],1,'en serio' con ? o !
+quitar,enojo,palabra,\bmolest\w*,NA,'disculpen la molestia' es cortesía
+agregar,enojo,palabra,\b(me )?(molesta|molesto|molestan)\b,1,molestia propia
+quitar,alegría,emoji,😅,NA,"😅 suele ser nervios, no alegría"
+agregar,preocupación,emoji,😅,1,😅 = nervios
+quitar,seguridad,emoji,👍,NA,👍 es aprobación débil
+agregar,seguridad,emoji,👍,0.5,👍 aprobación débil (solo cuenta con otra señal)
+quitar,seguridad,emoji,👌,NA,👌 débil
+agregar,seguridad,emoji,👌,0.5,👌 aprobación débil
+quitar,alegría,palabra,\bxd\b,NA,'xd' suaviza el tono; no es alegría por sí solo
+agregar,alegría,palabra,\bxd\b,0.5,xd débil
+quitar,preocupación,palabra,\bultimo dia\b,NA,señal débil
+agregar,preocupación,palabra,\bultimo dia\b,0.5,señal débil
+agregar,frustración,palabra,\bsin cupos?\b,1,bigrama 'sin cupo' frecuente en el corpus
+agregar,frustración,palabra,\bno hay cupos?\b,1,falta de cupos
+agregar,frustración,palabra,\bya no se puede\b,1,bloqueo de trámite
+agregar,frustración,palabra,\b(no|nunca) se (abre|abrio|habilita|habilitan)\b,1,materia que no se abre
+agregar,frustración,palabra,\bperjudic\w*,1,perjuicio

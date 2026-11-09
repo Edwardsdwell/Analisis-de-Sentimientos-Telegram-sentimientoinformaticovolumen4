@@ -1,0 +1,11 @@
+chequeo,descripcion,resultado,detalle
+V1,Ids unicos,OK,28000 filas
+V2,Se conservan los 28 000 elementos,OK,filas: 28000
+V3,Fechas completas y en orden razonable,OK,2022-12-16 a 2026-10-13
+V4,Reacciones: suma por mensaje = tabla de reacciones,OK,6074 vs 6074
+V5,Ningun mensaje usable es publicidad,OK,589 publicidades excluidas
+V6,Todo usable tiene texto,OK,
+V7,Conteos s_* son enteros >= 0 y sin NA,OK,
+V8,sent_dom vacio  <=>  sin ninguna senal,OK,
+V9,Periodos asignados a todo mensaje,OK,
+V10,Base de tasas = suma de usables por periodo,OK,19317 usables

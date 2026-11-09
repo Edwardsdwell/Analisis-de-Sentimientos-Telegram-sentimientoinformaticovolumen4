@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - metodologia.qmd
+    - calidad.qmd
+    - validacion.qmd
+    - sentimientos.qmd
+    - texto.qmd
+    - sugerencias.qmd
+    - interactivos.qmd
+    - bitacora.qmd
+    - conclusiones.qmd
+website:
+  title: "Sentimientos en Telegram"
+  page-footer: "Proyecto UMSA · Minería de Datos · Análisis de texto y sentimientos · Todo replicable en R"
+  sidebar:
+    style: docked
+    search: false
+    collapse-level: 1
+    contents:
+      - {href: index.qmd, text: "Inicio"}
+      - {href: metodologia.qmd, text: "Metodología"}
+      - {href: calidad.qmd, text: "Calidad"}
+      - {href: validacion.qmd, text: "Validación"}
+      - {href: sentimientos.qmd, text: "Sentimientos"}
+      - {href: texto.qmd, text: "Texto y temas"}
+      - {href: sugerencias.qmd, text: "Sugerencias"}
+      - {href: interactivos.qmd, text: "Interactivos"}
+      - {href: bitacora.qmd, text: "Bitácora"}
+      - {href: conclusiones.qmd, text: "Conclusiones"}
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+    page-layout: article
+    grid:
+      sidebar-width: 270px
+      body-width: 1080px
+      margin-width: 20px
+execute:
+  echo: false
+  warning: false
+  message: false
+

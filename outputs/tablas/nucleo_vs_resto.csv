@@ -1,0 +1,31 @@
+grupo,sentimiento,pct
+Nucleo (100+ mensajes),admiración,0.22118456623248955
+Nucleo (100+ mensajes),alegría,1.2779552715654952
+Nucleo (100+ mensajes),cansancio,0.07372818874416319
+Nucleo (100+ mensajes),confusión,0.7127058245269108
+Nucleo (100+ mensajes),curiosidad,22.92946669943475
+Nucleo (100+ mensajes),decepción,0.3686409437208159
+Nucleo (100+ mensajes),enojo,0.4177930695502581
+Nucleo (100+ mensajes),esperanza,0.4915212582944212
+Nucleo (100+ mensajes),frustración,2.211845662324895
+Nucleo (100+ mensajes),gratitud,3.1457360530842955
+Nucleo (100+ mensajes),preocupación,1.4254116490538216
+Nucleo (100+ mensajes),seguridad,1.1304988940771687
+Nucleo (100+ mensajes),sorpresa,0.39321700663553694
+Nucleo (100+ mensajes),tranquilidad,0.4669451953797002
+Nucleo (100+ mensajes),tristeza,1.3762595232243795
+Resto,admiración,0.2229800629590766
+Resto,alegría,2.0920776495278073
+Resto,cansancio,0.1114900314795383
+Resto,confusión,1.0230849947534104
+Resto,curiosidad,38.910020986358866
+Resto,decepción,0.43940188877229797
+Resto,enojo,0.2229800629590766
+Resto,esperanza,0.43284365162644284
+Resto,frustración,2.367523609653725
+Resto,gratitud,4.603882476390346
+Resto,preocupación,1.7116998950682056
+Resto,seguridad,0.49186778593913955
+Resto,sorpresa,0.41316894018887723
+Resto,tranquilidad,0.4590766002098636
+Resto,tristeza,1.6592339979013642
