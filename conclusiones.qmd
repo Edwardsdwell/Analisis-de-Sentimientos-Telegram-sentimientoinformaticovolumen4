@@ -1,0 +1,58 @@
+---
+title: "Conclusiones y limitaciones"
+---
+
+## Conclusiones
+
+::: {.tg}
+::: {.msg .verde data-t="10:51 ✓✓"}
+<span class="who">Temas</span>
+El chat gira en torno a **materias, paralelos, horarios, inscripción y cupos**, con picos estacionales en Invierno y Verano.
+:::
+::: {.msg .verde data-t="10:52 ✓✓"}
+<span class="who">Dudas y gratitud</span>
+**Uno de cada tres mensajes es una pregunta** (curiosidad): el grupo funciona sobre todo como espacio para resolver dudas. Le sigue la **gratitud**.
+:::
+::: {.msg .verde data-t="10:53 ✓✓"}
+<span class="who">Frustración y preocupación</span>
+Se asocian a inscripción, cupos y pagos.
+:::
+::: {.msg .verde data-t="10:54 ✓✓"}
+<span class="who">Publicidad</span>
+Las invitaciones a otros grupos y formularios son una parte importante de los enlaces y se excluyeron del análisis.
+:::
+::: {.msg .verde data-t="10:55 ✓✓"}
+<span class="who">Perfil emocional</span>
+Es **similar** entre Invierno, Verano y fuera de temporada.
+:::
+::: {.msg .verde data-t="10:56 ✓✓"}
+<span class="who">Diccionario con contexto</span>
+Mejorarlo con **negaciones, preguntas, cortesía y publicidad** subió de forma clara la precisión y el recall frente a la versión inicial (ver [Validación](validacion.qmd)).
+:::
+:::
+
+## Limitaciones
+
+::: {.tg}
+::: {.msg .naranja .out data-t="⚠️"}
+<span class="who">Palabras y emojis</span>
+El diccionario detecta palabras y emojis: no entiende ironía ni contexto profundo, y solo una parte de los mensajes (alrededor de un tercio) tiene señal emocional.
+:::
+::: {.msg .naranja .out data-t="⚠️"}
+<span class="who">Validación pequeña</span>
+Usa **100 mensajes**, **un solo etiquetador** y la misma muestra con la que se ajustó el diccionario: las cifras son algo optimistas.
+:::
+::: {.msg .naranja .out data-t="⚠️"}
+<span class="who">Sexo inferido</span>
+Se **infiere por nombre**; una parte importante de los mensajes quedó como indeterminada y la inferencia puede fallar.
+:::
+::: {.msg .naranja .out data-t="⚠️"}
+<span class="who">Un solo grupo</span>
+Se analiza un solo grupo de Telegram: los resultados no se generalizan a otros cursos.
+:::
+::: {.msg .naranja .out data-t="⚠️"}
+<span class="who">Picos diarios</span>
+Se basan en pocos mensajes y se interpretan con cautela.
+:::
+:::
+

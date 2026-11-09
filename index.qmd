@@ -1,0 +1,57 @@
+---
+title: "Análisis de sentimientos en un grupo de Telegram"
+subtitle: "Curso de Temporada · 2022-2026 · 15 sentimientos con diccionario propio"
+---
+
+```{r}
+#| include: false
+suppressMessages({library(dplyr); library(tidyr); library(plotly); library(lubridate)})
+source("graficos_web.R", encoding = "UTF-8")
+L <- tryCatch(load_d(), error = function(e) NULL)
+f <- function(x) format(x, big.mark = " ", scientific = FALSE)
+ficha <- function(n, l, s = "", c = "#4cc9f0") sprintf('<div class="ficha" style="--c:%s"><div class="n">%s</div><div class="l">%s</div><div class="s">%s</div></div>', c, n, l, s)
+emo <- function(...) cat('<div class="emo">', paste0("<span>", c(...), "</span>", collapse = ""), '</div>', sep = "")
+```
+
+```{r}
+#| output: asis
+d <- L$d
+kpi <- function(v, t, c) sprintf('<div class="kpi" style="--c:%s"><div class="v">%s</div><div class="t">%s</div></div>', c, v, t)
+cat('::: {.portada}\n\n<div>\n<div class="kpis">',
+    kpi(f(nrow(d)), "elementos exportados", "#4cc9f0"),
+    kpi(f(sum(d$es_msg)), "mensajes", "#c77dff"),
+    kpi(f(n_distinct(d$usuario[d$es_msg], na.rm = TRUE)), "usuarios que escribieron", "#ff9ff3"),
+    kpi(f(sum(d$usable)), "mensajes analizados", "#06d6a0"),
+    kpi(paste0(round(mean(d$n_senal[d$usable] > 0) * 100, 1), " %"), "con algún sentimiento", "#ffd166"),
+    kpi(paste(format(as_date(min(d$fecha)), "%m/%Y"), "–", format(as_date(max(d$fecha)), "%m/%Y")), "periodo cubierto", "#f4a261"),
+    '</div>\n</div>\n\n', sep = "\n")
+cat('::: {.nota}\n::: {.msg .morada data-t="ℹ️"}\n<span class="who">¿De qué trata?</span>\nAnalizamos el chat de un grupo de Telegram del curso de temporada para medir **qué emociones expresan los estudiantes, cuándo y sobre qué temas**, con un **diccionario propio de 15 sentimientos** validado con 100 mensajes etiquetados a mano.\n:::\n:::\n\n:::\n')
+```
+
+## Hallazgos principales
+
+```{r}
+#| output: asis
+curi <- round(mean(d$s_curiosidad[d$usable] > 0) * 100, 1)
+npub <- sum(d$es_publicidad, na.rm = TRUE)
+fa <- "outputs/tablas/validacion_ablacion.csv"
+txt_val <- ""
+if (file.exists(fa)) {
+  a <- readr::read_csv(fa, show_col_types = FALSE); a1 <- a[1, ]; a2 <- a[nrow(a), ]
+  txt_val <- sprintf("Al mejorar el diccionario (contexto, negaciones, preguntas y publicidad), la **precisión subió de %d %% a %d %%** y el **recall de %d %% a %d %%** (F1: %.2f → %.2f) sobre los 100 mensajes etiquetados.",
+                     round(a1$precision * 100), round(a2$precision * 100), round(a1$recall * 100), round(a2$recall * 100), a1$F1, a2$F1)
+}
+h <- function(who, x, col, t) cat('::: {.msg .', col, '  data-t="', t, '"}\n<span class="who">', who, '</span>\n', x, '\n:::\n\n', sep = "")
+cat('::: {.tg}\n\n')
+h("🤔 Curiosidad", sprintf("**Uno de cada tres mensajes es una pregunta**: la curiosidad aparece en el %s %% de los mensajes analizados. El grupo se usa sobre todo para resolver dudas.", format(curi, decimal.mark = ",")), "azul", "10:41")
+if (nzchar(txt_val)) h("✅ Validación", txt_val, "verde", "10:42 ✓✓")
+h("🚫 Publicidad", sprintf("**Se excluyó la publicidad**: %s mensajes (invitaciones a otros grupos, formularios, convocatorias) salen del análisis; casi dos de cada tres enlaces del chat son invitaciones de WhatsApp.", f(npub)), "naranja", "10:43")
+h("😤 Frustración y preocupación", "**Se concentran en inscripción, cupos y pagos**, y suben en los periodos de inscripción (ver Sugerencias y Texto y temas).", "rojo", "10:44")
+h("📡 Perfil emocional", "**El perfil emocional de Invierno, Verano y fuera de temporada es parecido**; lo que cambia es el volumen y los temas (ver el radar en Sentimientos).", "morada", "10:45 ✓✓")
+cat(':::\n')
+```
+
+## Cómo recorrer el sitio
+
+<a class="pill" href="metodologia.html">Metodología</a><a class="pill" href="calidad.html">Calidad</a><a class="pill" href="validacion.html">Validación</a><a class="pill" href="sentimientos.html">Sentimientos</a><a class="pill" href="texto.html">Texto y temas</a><a class="pill" href="sugerencias.html">Sugerencias</a><a class="pill" href="interactivos.html">Interactivos</a><a class="pill" href="bitacora.html">Bitácora</a><a class="pill" href="conclusiones.html">Conclusiones</a>
+

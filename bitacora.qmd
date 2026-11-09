@@ -1,0 +1,18 @@
+---
+title: "Bitácora"
+---
+
+```{r}
+#| output: asis
+cand <- list.files(".", pattern = "bitacora.*\\.csv$", recursive = TRUE, ignore.case = TRUE, full.names = TRUE)
+cand <- cand[!grepl("docs/", cand)]
+if (!length(cand)) {
+  cat("No se encontró el archivo de la bitácora (bitacora.csv).")
+} else {
+  B <- readr::read_csv(cand[1], show_col_types = FALSE)
+  cat('<div style="overflow-x:auto">\n\n')
+  print(knitr::kable(B))
+  cat('\n\n</div>\n')
+}
+```
+

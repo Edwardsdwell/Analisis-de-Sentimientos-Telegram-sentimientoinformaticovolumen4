@@ -1,0 +1,130 @@
+---
+title: "Sentimientos"
+---
+
+```{r}
+#| include: false
+suppressMessages({library(dplyr); library(tidyr); library(plotly); library(lubridate)})
+source("graficos_web.R", encoding = "UTF-8")
+L <- tryCatch(load_d(), error = function(e) NULL)
+f <- function(x) format(x, big.mark = " ", scientific = FALSE)
+ficha <- function(n, l, s = "", c = "#4cc9f0") sprintf('<div class="ficha" style="--c:%s"><div class="n">%s</div><div class="l">%s</div><div class="s">%s</div></div>', c, n, l, s)
+emo <- function(...) cat('<div class="emo">', paste0("<span>", c(...), "</span>", collapse = ""), '</div>', sep = "")
+```
+
+```{r}
+#| output: asis
+emo("😊", "🙏", "🤔", "😢", "😤", "😮", "😌")
+```
+
+## Visión general (diccionario propio v2, 15 categorías)
+
+```{r}
+safe(gw_general(L))
+```
+
+<p class="interp">La curiosidad es el sentimiento dominante; le siguen la gratitud, la frustración y la alegría.</p>
+
+::: {.tg}
+::: {.msg .azul data-t="🤔"}
+<span class="who">Lo que más se ve</span>
+La **curiosidad** (preguntas) domina; después vienen la gratitud, la frustración y la alegría.
+:::
+:::
+
+## Librería NRC (8) frente a diccionario propio (15)
+
+```{r}
+safe(gw_nrc())
+```
+
+<p class="interp">La librería NRC detecta más mensajes pero con palabras ambiguas; el diccionario propio es más conservador.</p>
+
+::: {.tg}
+::: {.msg .morada data-t="📚"}
+<span class="who">¿Por qué dos diccionarios?</span>
+NRC es un diccionario inglés traducido: detecta muchísimo más (confianza, anticipación) pero con palabras ambiguas. El diccionario propio es más conservador y cubre 15 categorías pensadas para este contexto.
+:::
+:::
+
+## Radar de emociones: Invierno, Verano y fuera de temporada
+
+```{r}
+safe(gw_radar_temp())
+```
+
+<p class="interp">El perfil emocional es muy parecido entre Invierno, Verano y fuera de temporada; cambia el volumen, no la forma.</p>
+
+El perfil es muy parecido entre temporadas.
+
+## Por periodo
+
+```{r}
+safe(gw_heat_periodos())
+```
+
+<p class="interp">La curiosidad domina todos los periodos (el color llega al máximo en 8 %); el resto de sentimientos se mantiene en valores bajos y estables.</p>
+
+```{r}
+safe(gw_inv_ver())
+```
+
+<p class="interp">Las tres temporadas tienen valores similares en casi todos los sentimientos.</p>
+
+## Flujo periodo → sentimiento (Sankey)
+
+```{r}
+safe(gw_sankey_per())
+```
+
+<p class="interp">Cada periodo reparte sus mensajes con sentimiento entre las mismas categorías; el grosor del flujo indica cuántos mensajes son.</p>
+
+## Reloj de actividad: hora del día y tono
+
+```{r}
+safe(gw_polar_hora())
+```
+
+<p class="interp">La actividad se concentra en la mañana, con un máximo alrededor de las 10 h, y es muy baja de madrugada.</p>
+
+```{r}
+safe(gw_polar_semana(L))
+```
+
+<p class="interp">La actividad es mayor entre semana y baja los fines de semana.</p>
+
+## Reacciones
+
+```{r}
+#| output: asis
+cat('<div class="reac"><span>👍</span><span>❤️</span><span>🔥</span><span>😢</span><span>🎉</span><span>🙏</span><span>👏</span></div>\n')
+```
+
+```{r}
+safe(gw_reacciones())
+```
+
+<p class="interp">El pulgar arriba concentra casi todas las reacciones, por eso la categoría "seguridad" domina.</p>
+
+::: {.tg}
+::: {.msg .verde data-t="👍 ✓✓"}
+<span class="who">Reaccionar es aprobar</span>
+La reacción más usada es el pulgar arriba (aprobación): reaccionar en este grupo es sobre todo *aprobar*.
+:::
+:::
+
+## Hombres y mujeres (sexo inferido por nombre)
+
+```{r}
+safe(gw_sexo())
+```
+
+<p class="interp">La mayoría de las diferencias entre hombres y mujeres son pequeñas; solo las marcadas con asterisco son significativas.</p>
+
+::: {.tg}
+::: {.msg .naranja data-t="⚠️"}
+<span class="who">Con cautela</span>
+Gran parte de los mensajes quedó como *indeterminado* porque no se pudo inferir el sexo; los resultados se leen con cautela.
+:::
+:::
+

@@ -1,0 +1,87 @@
+---
+title: "Metodología"
+---
+
+```{r}
+#| include: false
+suppressMessages({library(dplyr); library(tidyr); library(plotly); library(lubridate)})
+source("graficos_web.R", encoding = "UTF-8")
+L <- tryCatch(load_d(), error = function(e) NULL)
+f <- function(x) format(x, big.mark = " ", scientific = FALSE)
+ficha <- function(n, l, s = "", c = "#4cc9f0") sprintf('<div class="ficha" style="--c:%s"><div class="n">%s</div><div class="l">%s</div><div class="s">%s</div></div>', c, n, l, s)
+emo <- function(...) cat('<div class="emo">', paste0("<span>", c(...), "</span>", collapse = ""), '</div>', sep = "")
+```
+
+::: {.dos}
+::: {.izq}
+## Flujo de trabajo (todo en R)
+
+1. **Ingesta**: lectura de `result.json` desde `media.zip` sin modificar el original (huella SHA-256 registrada).
+2. **Limpieza**: se *marcan* (no se borran) mensajes de servicio, sin texto, solo multimedia, solo enlace, muy cortos, repetidos y ráfagas.
+3. **Anonimización**: cada usuario se reemplaza por un hash con sal; los nombres no salen del equipo.
+4. **Periodos**: tabla configurable (Invierno may–ago, Verano dic–feb, fuera de temporada).
+5. **Sentimientos**: diccionario propio de 15 categorías (palabras y emojis), **versión 2 con contexto** (negaciones, preguntas, cortesía, publicidad) + comparación con NRC/syuzhet.
+6. **Validación**: 100 mensajes etiquetados a mano; precisión, recall y F1 por sentimiento y por mejora (ver [Validación](validacion.qmd)).
+7. **Texto**: tokenización, stopwords (conservando negaciones), TF-IDF, bigramas, ley de Zipf, temas con LDA.
+8. **Sugerencias**: picos, hora × día, velocidad de respuesta, índice emocional, núcleo de usuarios, radar y relojes polares.
+9. **Calidad**: embudo de datos, dominios, puntaje de spam y 10 chequeos de integridad.
+:::
+
+::: {.der}
+## Replicabilidad
+
+::: {.tg}
+::: {.msg .cian data-t="🔁"}
+<span class="who">Todo en un solo lugar</span>
+Parámetros en un solo archivo (`R01_config.R`), semilla fija (42), rutas relativas, sin ventanas de selección.
+:::
+::: {.msg .cian data-t="📒"}
+<span class="who">Todo queda anotado</span>
+Cada paso queda en la [bitácora](bitacora.qmd).
+:::
+::: {.msg .cian data-t="➕"}
+<span class="who">Fácil de ampliar</span>
+Para añadir un sentimiento nuevo basta agregar filas al archivo del diccionario (`lexicon_sentimientos_v2.csv`).
+:::
+:::
+:::
+:::
+
+## Los 15 sentimientos del diccionario propio (v2)
+
+```{r}
+#| output: asis
+fl <- if (file.exists("lexicon_sentimientos_v2.csv")) "lexicon_sentimientos_v2.csv" else "lexicon_sentimientos.csv"
+Lx <- readr::read_csv(fl, show_col_types = FALSE)
+tbl <- Lx |> count(sentimiento, tipo) |> pivot_wider(names_from = tipo, values_from = n, values_fill = 0)
+for (cc in c("palabra", "emoji")) if (!cc %in% names(tbl)) tbl[[cc]] <- 0
+cat('<div class="fichas">')
+for (i in seq_len(nrow(tbl)))
+  cat(ficha(tbl$sentimiento[i], paste0(tbl$palabra[i], " palabras"), paste0(tbl$emoji[i], " emojis"), col_s(tbl$sentimiento[i])))
+cat('</div>\n')
+```
+
+::: {.dos}
+::: {.izq}
+## Periodos
+
+```{r}
+P <- readr::read_csv("data/processed/periodos.csv", show_col_types = FALSE)
+knitr::kable(P[, c("etiqueta", "inicio", "fin")], col.names = c("Periodo", "Inicio", "Fin"))
+```
+:::
+
+::: {.der}
+## Ética y privacidad
+
+::: {.tg}
+::: {.msg .rosa data-t="😉"}
+<span class="who">Ética y privacidad</span>
+Los usuarios se anonimizan; el sexo se **infiere por nombre** (diccionario propio), solo se usa de forma agregada y puede ser incorrecto.
+
+No se publica ningún texto de mensajes: de los enlaces solo se muestra el dominio. 😉
+:::
+:::
+:::
+:::
+
