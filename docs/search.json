@@ -1,0 +1,582 @@
+[
+  {
+    "objectID": "conclusiones.html",
+    "href": "conclusiones.html",
+    "title": "Conclusiones y limitaciones",
+    "section": "",
+    "text": "Temas El chat gira en torno a materias, paralelos, horarios, inscripción y cupos, con picos estacionales en Invierno y Verano.\n\n\nDudas y gratitud Uno de cada tres mensajes es una pregunta (curiosidad): el grupo funciona sobre todo como espacio para resolver dudas. Le sigue la gratitud.\n\n\nFrustración y preocupación Se asocian a inscripción, cupos y pagos.\n\n\nPublicidad Las invitaciones a otros grupos y formularios son una parte importante de los enlaces y se excluyeron del análisis.\n\n\nPerfil emocional Es similar entre Invierno, Verano y fuera de temporada.\n\n\nDiccionario con contexto Mejorarlo con negaciones, preguntas, cortesía y publicidad subió de forma clara la precisión y el recall frente a la versión inicial (ver Validación).",
+    "crumbs": [
+      "Conclusiones"
+    ]
+  },
+  {
+    "objectID": "conclusiones.html#conclusiones",
+    "href": "conclusiones.html#conclusiones",
+    "title": "Conclusiones y limitaciones",
+    "section": "",
+    "text": "Temas El chat gira en torno a materias, paralelos, horarios, inscripción y cupos, con picos estacionales en Invierno y Verano.\n\n\nDudas y gratitud Uno de cada tres mensajes es una pregunta (curiosidad): el grupo funciona sobre todo como espacio para resolver dudas. Le sigue la gratitud.\n\n\nFrustración y preocupación Se asocian a inscripción, cupos y pagos.\n\n\nPublicidad Las invitaciones a otros grupos y formularios son una parte importante de los enlaces y se excluyeron del análisis.\n\n\nPerfil emocional Es similar entre Invierno, Verano y fuera de temporada.\n\n\nDiccionario con contexto Mejorarlo con negaciones, preguntas, cortesía y publicidad subió de forma clara la precisión y el recall frente a la versión inicial (ver Validación).",
+    "crumbs": [
+      "Conclusiones"
+    ]
+  },
+  {
+    "objectID": "conclusiones.html#limitaciones",
+    "href": "conclusiones.html#limitaciones",
+    "title": "Conclusiones y limitaciones",
+    "section": "Limitaciones",
+    "text": "Limitaciones\n\n\nPalabras y emojis El diccionario detecta palabras y emojis: no entiende ironía ni contexto profundo, y solo una parte de los mensajes (alrededor de un tercio) tiene señal emocional.\n\n\nValidación pequeña Usa 100 mensajes, un solo etiquetador y la misma muestra con la que se ajustó el diccionario: las cifras son algo optimistas.\n\n\nSexo inferido Se infiere por nombre; una parte importante de los mensajes quedó como indeterminada y la inferencia puede fallar.\n\n\nUn solo grupo Se analiza un solo grupo de Telegram: los resultados no se generalizan a otros cursos.\n\n\nPicos diarios Se basan en pocos mensajes y se interpretan con cautela.",
+    "crumbs": [
+      "Conclusiones"
+    ]
+  },
+  {
+    "objectID": "interactivos.html",
+    "href": "interactivos.html",
+    "title": "Visualizaciones interactivas",
+    "section": "",
+    "text": "El perfil emocional es muy parecido entre Invierno, Verano y fuera de temporada; cambia el volumen, no la forma.",
+    "crumbs": [
+      "Interactivos"
+    ]
+  },
+  {
+    "objectID": "interactivos.html#radar-de-emociones-por-temporada",
+    "href": "interactivos.html#radar-de-emociones-por-temporada",
+    "title": "Visualizaciones interactivas",
+    "section": "",
+    "text": "El perfil emocional es muy parecido entre Invierno, Verano y fuera de temporada; cambia el volumen, no la forma.",
+    "crumbs": [
+      "Interactivos"
+    ]
+  },
+  {
+    "objectID": "interactivos.html#radar-por-periodo",
+    "href": "interactivos.html#radar-por-periodo",
+    "title": "Visualizaciones interactivas",
+    "section": "Radar por periodo",
+    "text": "Radar por periodo\n\n\n\n\n\n\n\nAl aislar un periodo en la leyenda se ve que todos comparten una forma similar.",
+    "crumbs": [
+      "Interactivos"
+    ]
+  },
+  {
+    "objectID": "interactivos.html#animación-las-emociones-periodo-a-periodo",
+    "href": "interactivos.html#animación-las-emociones-periodo-a-periodo",
+    "title": "Visualizaciones interactivas",
+    "section": "Animación: las emociones periodo a periodo",
+    "text": "Animación: las emociones periodo a periodo\nPulsa ▶ Reproducir o mueve la barra.\n\n\n\n\n\n\n\nAl avanzar los periodos las barras cambian poco: la estructura emocional del grupo es estable.",
+    "crumbs": [
+      "Interactivos"
+    ]
+  },
+  {
+    "objectID": "interactivos.html#reloj-de-actividad",
+    "href": "interactivos.html#reloj-de-actividad",
+    "title": "Visualizaciones interactivas",
+    "section": "Reloj de actividad",
+    "text": "Reloj de actividad\n\n\n\n\n\n\n\nLa actividad se concentra en la mañana, con un máximo alrededor de las 10 h, y es muy baja de madrugada.",
+    "crumbs": [
+      "Interactivos"
+    ]
+  },
+  {
+    "objectID": "interactivos.html#evolución-mensual-de-cada-sentimiento",
+    "href": "interactivos.html#evolución-mensual-de-cada-sentimiento",
+    "title": "Visualizaciones interactivas",
+    "section": "Evolución mensual de cada sentimiento",
+    "text": "Evolución mensual de cada sentimiento\n\n\n\n\n\n\n\nLos sentimientos se mantienen estables mes a mes, con picos en los meses de inscripción.",
+    "crumbs": [
+      "Interactivos"
+    ]
+  },
+  {
+    "objectID": "interactivos.html#mapa-de-calor-por-periodo",
+    "href": "interactivos.html#mapa-de-calor-por-periodo",
+    "title": "Visualizaciones interactivas",
+    "section": "Mapa de calor por periodo",
+    "text": "Mapa de calor por periodo\n\n\n\n\n\n\n\nLa curiosidad domina todos los periodos (el color llega al máximo en 8 %); el resto de sentimientos se mantiene en valores bajos y estables.",
+    "crumbs": [
+      "Interactivos"
+    ]
+  },
+  {
+    "objectID": "interactivos.html#flujo-periodo-sentimiento",
+    "href": "interactivos.html#flujo-periodo-sentimiento",
+    "title": "Visualizaciones interactivas",
+    "section": "Flujo periodo → sentimiento",
+    "text": "Flujo periodo → sentimiento\n\n\n\n\n\n\n\nCada periodo reparte sus mensajes con sentimiento entre las mismas categorías; el grosor del flujo indica cuántos mensajes son.",
+    "crumbs": [
+      "Interactivos"
+    ]
+  },
+  {
+    "objectID": "interactivos.html#cambio-v1-v2",
+    "href": "interactivos.html#cambio-v1-v2",
+    "title": "Visualizaciones interactivas",
+    "section": "Cambio v1 → v2",
+    "text": "Cambio v1 → v2\n\n\n\n\n\n\n\nMuestra a dónde fue cada mensaje al pasar de la versión 1 a la 2; buena parte de los cambios son mensajes que dejan de contarse por ser publicidad o no tener señal real.",
+    "crumbs": [
+      "Interactivos"
+    ]
+  },
+  {
+    "objectID": "texto.html",
+    "href": "texto.html",
+    "title": "Texto y temas",
+    "section": "",
+    "text": "Las palabras más frecuentes giran en torno a materias, grupos y trámites de inscripción.",
+    "crumbs": [
+      "Texto y temas"
+    ]
+  },
+  {
+    "objectID": "texto.html#palabras-más-frecuentes",
+    "href": "texto.html#palabras-más-frecuentes",
+    "title": "Texto y temas",
+    "section": "",
+    "text": "Las palabras más frecuentes giran en torno a materias, grupos y trámites de inscripción.",
+    "crumbs": [
+      "Texto y temas"
+    ]
+  },
+  {
+    "objectID": "texto.html#bigramas",
+    "href": "texto.html#bigramas",
+    "title": "Texto y temas",
+    "section": "Bigramas",
+    "text": "Bigramas\n\n\n\n\n\n\n\nLos pares de palabras más repetidos confirman los temas del chat: materias, cupos, clases y agradecimientos.\n\n\n\n\n\n\n\n\nLas palabras más conectadas forman grupos temáticos alrededor de materias y trámites.",
+    "crumbs": [
+      "Texto y temas"
+    ]
+  },
+  {
+    "objectID": "texto.html#palabras-distintivas-tf-idf",
+    "href": "texto.html#palabras-distintivas-tf-idf",
+    "title": "Texto y temas",
+    "section": "Palabras distintivas (TF-IDF)",
+    "text": "Palabras distintivas (TF-IDF)\n\n\n\n\n\n\n\nLas palabras distintivas de cada periodo reflejan lo que se discutía en esa época (inscripciones, sorteos, cupos).\n\n\n\n\n\n\n\n\nCada temporada tiene su propio vocabulario característico.",
+    "crumbs": [
+      "Texto y temas"
+    ]
+  },
+  {
+    "objectID": "texto.html#ley-de-zipf",
+    "href": "texto.html#ley-de-zipf",
+    "title": "Texto y temas",
+    "section": "Ley de Zipf",
+    "text": "Ley de Zipf\n\n\n\n\n\n\n\nPocas palabras se usan muchísimo y la gran mayoría casi nunca, como en cualquier texto natural.",
+    "crumbs": [
+      "Texto y temas"
+    ]
+  },
+  {
+    "objectID": "texto.html#lingüística-superficial",
+    "href": "texto.html#lingüística-superficial",
+    "title": "Texto y temas",
+    "section": "Lingüística superficial",
+    "text": "Lingüística superficial\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nperiodo_tipo\ntokens\ntipos\nhapax\nttr\nmensajes\npalabras_media\nmediana\n\n\n\n\nFuera de temporada\n5988\n2287\n1407\n0.382\n1305\n10.6\n8\n\n\nInvierno\n33852\n5173\n2657\n0.153\n8825\n9.0\n7\n\n\nVerano\n37868\n5419\n2741\n0.143\n9451\n9.3\n7",
+    "crumbs": [
+      "Texto y temas"
+    ]
+  },
+  {
+    "objectID": "texto.html#temas-del-chat-lda",
+    "href": "texto.html#temas-del-chat-lda",
+    "title": "Texto y temas",
+    "section": "Temas del chat (LDA)",
+    "text": "Temas del chat (LDA)\n\n\nGráficas de temas Estas gráficas vienen del modelo de temas (LDA) y se muestran como imagen.",
+    "crumbs": [
+      "Texto y temas"
+    ]
+  },
+  {
+    "objectID": "validacion.html",
+    "href": "validacion.html",
+    "title": "Validación del diccionario",
+    "section": "",
+    "text": "¿Qué hicimos? Etiquetamos a mano 100 mensajes (60 con señal y 40 sin señal, muestra estratificada) y comparamos lo que detecta el diccionario con lo que realmente expresan. Así sabemos qué tan confiable es.",
+    "crumbs": [
+      "Validación"
+    ]
+  },
+  {
+    "objectID": "validacion.html#cómo-se-mide",
+    "href": "validacion.html#cómo-se-mide",
+    "title": "Validación del diccionario",
+    "section": "Cómo se mide",
+    "text": "Cómo se mide\n\n\nPrecisión De lo que el diccionario marca, cuánto es correcto.\n\n\nRecall De lo que realmente hay, cuánto encuentra.\n\n\nF1 Resumen de las dos.",
+    "crumbs": [
+      "Validación"
+    ]
+  },
+  {
+    "objectID": "validacion.html#qué-aporta-cada-mejora",
+    "href": "validacion.html#qué-aporta-cada-mejora",
+    "title": "Validación del diccionario",
+    "section": "Qué aporta cada mejora",
+    "text": "Qué aporta cada mejora\n\n\n\n\n\n\n\nCada mejora al diccionario aumenta la precisión; la curva final muestra el efecto acumulado de todas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEtapa\nPrecisión\nRecall\nF1\nAcierto binario\nCoincidencia exacta\n\n\n\n\nv1 original\n0.486\n0.324\n0.389\n0.64\n0.31\n\n\n+ filtro de publicidad\n0.523\n0.324\n0.400\n0.67\n0.34\n\n\n+ preguntas = curiosidad\n0.621\n0.514\n0.562\n0.81\n0.46\n\n\n+ negación y cortesía\n0.643\n0.514\n0.571\n0.82\n0.47\n\n\n+ léxico ajustado (v2)\n0.750\n0.543\n0.630\n0.81\n0.54",
+    "crumbs": [
+      "Validación"
+    ]
+  },
+  {
+    "objectID": "validacion.html#f1-por-sentimiento-versión-1-frente-a-versión-2",
+    "href": "validacion.html#f1-por-sentimiento-versión-1-frente-a-versión-2",
+    "title": "Validación del diccionario",
+    "section": "F1 por sentimiento: versión 1 frente a versión 2",
+    "text": "F1 por sentimiento: versión 1 frente a versión 2\n\n\n\n\n\n\n\nLa versión 2 mejora el F1 en la mayoría de los sentimientos; los que tienen pocos casos son los menos estables.\n\n\n\n\n\n\nSentimiento\nTP\nFP\nFN\nPrecisión\nRecall\nF1\n\n\n\n\nalegría\n3\n2\n2\n0.60\n0.60\n0.60\n\n\ngratitud\n5\n0\n0\n1.00\n1.00\n1.00\n\n\nesperanza\n1\n0\n4\n1.00\n0.20\n0.33\n\n\nseguridad\n0\n1\n2\n0.00\n0.00\n0.00\n\n\nadmiración\n0\n0\n3\nNA\n0.00\n0.00\n\n\ntranquilidad\n0\n0\n2\nNA\n0.00\n0.00\n\n\nsorpresa\n0\n0\n1\nNA\n0.00\n0.00\n\n\nconfusión\n1\n2\n4\n0.33\n0.20\n0.25\n\n\npreocupación\n2\n1\n6\n0.67\n0.25\n0.36\n\n\ntristeza\n1\n3\n0\n0.25\n1.00\n0.40\n\n\nenojo\n0\n0\n5\nNA\n0.00\n0.00\n\n\ndecepción\n0\n2\n4\n0.00\n0.00\n0.00\n\n\ncansancio\n0\n0\n2\nNA\n0.00\n0.00\n\n\ncuriosidad\n38\n4\n4\n0.90\n0.90\n0.90\n\n\nfrustración\n6\n4\n9\n0.60\n0.40\n0.48",
+    "crumbs": [
+      "Validación"
+    ]
+  },
+  {
+    "objectID": "validacion.html#cambios-hechos-al-diccionario-v1-v2",
+    "href": "validacion.html#cambios-hechos-al-diccionario-v1-v2",
+    "title": "Validación del diccionario",
+    "section": "Cambios hechos al diccionario (v1 → v2)",
+    "text": "Cambios hechos al diccionario (v1 → v2)\n\n\nVer la lista de cambios\n\n\n\n\n\n\n\n\n\n\n\n\naccion\nsentimiento\ntipo\npatron\npeso\nmotivo\n\n\n\n\nquitar\nconfusión\npalabra\n\nNA\n‘si alguien necesita ayuda’ ofrece ayuda; no es confusión\n\n\nagregar\nconfusión\npalabra\nayuda 1.0\npedir ayuda en primera persona\n\n\n\nagregar\nconfusión\npalabra\npueden ayudar 1.0\npedir ayuda en primera persona\n\n\n\nquitar\nconfusión\npalabra\n\nNA\n‘cualquier duda escribe’ es cortesía\n\n\nagregar\nconfusión\npalabra\ntengo|tenia|surgio|surge) (una |alguna )?duda\n1.0\nduda propia\n\n\nquitar\ncuriosidad\npalabra\nque NA\n‘por que’ sin tilde suele ser ‘porque’; las preguntas se detectan con la regla de pregunta\n\n\n\nquitar\nesperanza\npalabra\n NA\n‘mala suerte’ no es esperanza\n\n\n\nagregar\nesperanza\npalabra\n(?&lt;!mala )(?&lt;!pura ) 0.5\nsuerte débil; excluye ‘mala/pura suerte’\n\n\n\nagregar\nfrustración\npalabra\nsuerte 1.0\nmala suerte = frustración\n\n\n\nquitar\nsorpresa\npalabra\nserio NA\n‘en serio’ es muletilla; solo cuenta con ? o !\n\n\n\nquitar\nsorpresa\npalabra\n NA\n‘enserio’ es muletilla\n\n\n\nagregar\nsorpresa\npalabra\n?serio ?[?!]\n1.0\n‘en serio’ con ? o !\n\n\nquitar\nenojo\npalabra\n\nNA\n‘disculpen la molestia’ es cortesía\n\n\nagregar\nenojo\npalabra\nme )?(molesta|molesto|molestan) 1.0\nmolestia propia\n\n\n\nquitar\nalegría\nemoji\n😅\nNA\n😅 suele ser nervios, no alegría\n\n\nagregar\npreocupación\nemoji\n😅\n1.0\n😅 = nervios\n\n\nquitar\nseguridad\nemoji\n👍\nNA\n👍 es aprobación débil\n\n\nagregar\nseguridad\nemoji\n👍\n0.5\n👍 aprobación débil (solo cuenta con otra señal)\n\n\nquitar\nseguridad\nemoji\n👌\nNA\n👌 débil\n\n\nagregar\nseguridad\nemoji\n👌\n0.5\n👌 aprobación débil\n\n\nquitar\nalegría\npalabra\n NA\n‘xd’ suaviza el tono; no es alegría por sí solo\n\n\n\nagregar\nalegría\npalabra\n 0.5\nxd débil\n\n\n\nquitar\npreocupación\npalabra\ndia NA\nseñal débil\n\n\n\nagregar\npreocupación\npalabra\ndia 0.5\nseñal débil\n\n\n\nagregar\nfrustración\npalabra\ncupos? 1.0\nbigrama ‘sin cupo’ frecuente en el corpus\n\n\n\nagregar\nfrustración\npalabra\nhay cupos? 1.0\nfalta de cupos\n\n\n\nagregar\nfrustración\npalabra\nno se puede 1.0\nbloqueo de trámite\n\n\n\nagregar\nfrustración\npalabra\nno|nunca) se (abre|abrio|habilita|habilitan) 1.0\nmateria que no se abre\n\n\n\nagregar\nfrustración\npalabra\n\n1.0\nperjuicio",
+    "crumbs": [
+      "Validación"
+    ]
+  },
+  {
+    "objectID": "validacion.html#efecto-en-todo-el-corpus",
+    "href": "validacion.html#efecto-en-todo-el-corpus",
+    "title": "Validación del diccionario",
+    "section": "Efecto en todo el corpus",
+    "text": "Efecto en todo el corpus\n\n\n\n\n\n\n\nEl mayor cambio entre versiones está en la curiosidad, que sube mucho al reconocer las preguntas como tales.",
+    "crumbs": [
+      "Validación"
+    ]
+  },
+  {
+    "objectID": "validacion.html#sankey-entre-métodos-v1-v2",
+    "href": "validacion.html#sankey-entre-métodos-v1-v2",
+    "title": "Validación del diccionario",
+    "section": "Sankey entre métodos: v1 → v2",
+    "text": "Sankey entre métodos: v1 → v2\nCada flujo muestra a qué sentimiento dominante pasó un mensaje al cambiar de versión (incluye “publicidad (excluida)” y “sin señal”).\n\n\n\n\n\n\n\nMuestra a dónde fue cada mensaje al pasar de la versión 1 a la 2; buena parte de los cambios son mensajes que dejan de contarse por ser publicidad o no tener señal real.",
+    "crumbs": [
+      "Validación"
+    ]
+  },
+  {
+    "objectID": "validacion.html#límites-de-esta-validación",
+    "href": "validacion.html#límites-de-esta-validación",
+    "title": "Validación del diccionario",
+    "section": "Límites de esta validación",
+    "text": "Límites de esta validación\n\n\nMisma muestra La evaluación es sobre la misma muestra con la que se ajustó el diccionario, por lo que los números son algo optimistas.\n\n\nUn solo etiquetador Etiquetó una sola persona; con dos se podría medir el acuerdo (κ de Cohen).\n\n\nPocos casos Son 100 mensajes: las cifras por sentimiento con pocos casos son orientativas.",
+    "crumbs": [
+      "Validación"
+    ]
+  },
+  {
+    "objectID": "metodologia.html",
+    "href": "metodologia.html",
+    "title": "Metodología",
+    "section": "",
+    "text": "Ingesta: lectura de result.json desde media.zip sin modificar el original (huella SHA-256 registrada).\nLimpieza: se marcan (no se borran) mensajes de servicio, sin texto, solo multimedia, solo enlace, muy cortos, repetidos y ráfagas.\nAnonimización: cada usuario se reemplaza por un hash con sal; los nombres no salen del equipo.\nPeriodos: tabla configurable (Invierno may–ago, Verano dic–feb, fuera de temporada).\nSentimientos: diccionario propio de 15 categorías (palabras y emojis), versión 2 con contexto (negaciones, preguntas, cortesía, publicidad) + comparación con NRC/syuzhet.\nValidación: 100 mensajes etiquetados a mano; precisión, recall y F1 por sentimiento y por mejora (ver Validación).\nTexto: tokenización, stopwords (conservando negaciones), TF-IDF, bigramas, ley de Zipf, temas con LDA.\nSugerencias: picos, hora × día, velocidad de respuesta, índice emocional, núcleo de usuarios, radar y relojes polares.\nCalidad: embudo de datos, dominios, puntaje de spam y 10 chequeos de integridad.\n\n\n\n\n\n\nTodo en un solo lugar Parámetros en un solo archivo (R01_config.R), semilla fija (42), rutas relativas, sin ventanas de selección.\n\n\nTodo queda anotado Cada paso queda en la bitácora.\n\n\nFácil de ampliar Para añadir un sentimiento nuevo basta agregar filas al archivo del diccionario (lexicon_sentimientos_v2.csv).",
+    "crumbs": [
+      "Metodología"
+    ]
+  },
+  {
+    "objectID": "metodologia.html#flujo-de-trabajo-todo-en-r",
+    "href": "metodologia.html#flujo-de-trabajo-todo-en-r",
+    "title": "Metodología",
+    "section": "",
+    "text": "Ingesta: lectura de result.json desde media.zip sin modificar el original (huella SHA-256 registrada).\nLimpieza: se marcan (no se borran) mensajes de servicio, sin texto, solo multimedia, solo enlace, muy cortos, repetidos y ráfagas.\nAnonimización: cada usuario se reemplaza por un hash con sal; los nombres no salen del equipo.\nPeriodos: tabla configurable (Invierno may–ago, Verano dic–feb, fuera de temporada).\nSentimientos: diccionario propio de 15 categorías (palabras y emojis), versión 2 con contexto (negaciones, preguntas, cortesía, publicidad) + comparación con NRC/syuzhet.\nValidación: 100 mensajes etiquetados a mano; precisión, recall y F1 por sentimiento y por mejora (ver Validación).\nTexto: tokenización, stopwords (conservando negaciones), TF-IDF, bigramas, ley de Zipf, temas con LDA.\nSugerencias: picos, hora × día, velocidad de respuesta, índice emocional, núcleo de usuarios, radar y relojes polares.\nCalidad: embudo de datos, dominios, puntaje de spam y 10 chequeos de integridad.",
+    "crumbs": [
+      "Metodología"
+    ]
+  },
+  {
+    "objectID": "metodologia.html#replicabilidad",
+    "href": "metodologia.html#replicabilidad",
+    "title": "Metodología",
+    "section": "",
+    "text": "Todo en un solo lugar Parámetros en un solo archivo (R01_config.R), semilla fija (42), rutas relativas, sin ventanas de selección.\n\n\nTodo queda anotado Cada paso queda en la bitácora.\n\n\nFácil de ampliar Para añadir un sentimiento nuevo basta agregar filas al archivo del diccionario (lexicon_sentimientos_v2.csv).",
+    "crumbs": [
+      "Metodología"
+    ]
+  },
+  {
+    "objectID": "metodologia.html#los-15-sentimientos-del-diccionario-propio-v2",
+    "href": "metodologia.html#los-15-sentimientos-del-diccionario-propio-v2",
+    "title": "Metodología",
+    "section": "Los 15 sentimientos del diccionario propio (v2)",
+    "text": "Los 15 sentimientos del diccionario propio (v2)\n\n\n\nadmiración\n\n\n21 palabras\n\n\n8 emojis\n\n\n\n\nalegría\n\n\n29 palabras\n\n\n13 emojis\n\n\n\n\ncansancio\n\n\n17 palabras\n\n\n6 emojis\n\n\n\n\nconfusión\n\n\n24 palabras\n\n\n5 emojis\n\n\n\n\ncuriosidad\n\n\n24 palabras\n\n\n4 emojis\n\n\n\n\ndecepción\n\n\n22 palabras\n\n\n7 emojis\n\n\n\n\nenojo\n\n\n26 palabras\n\n\n7 emojis\n\n\n\n\nesperanza\n\n\n17 palabras\n\n\n4 emojis\n\n\n\n\nfrustración\n\n\n27 palabras\n\n\n4 emojis\n\n\n\n\ngratitud\n\n\n13 palabras\n\n\n12 emojis\n\n\n\n\npreocupación\n\n\n25 palabras\n\n\n9 emojis\n\n\n\n\nseguridad\n\n\n20 palabras\n\n\n6 emojis\n\n\n\n\nsorpresa\n\n\n17 palabras\n\n\n8 emojis\n\n\n\n\ntranquilidad\n\n\n17 palabras\n\n\n6 emojis\n\n\n\n\ntristeza\n\n\n21 palabras\n\n\n9 emojis",
+    "crumbs": [
+      "Metodología"
+    ]
+  },
+  {
+    "objectID": "metodologia.html#periodos",
+    "href": "metodologia.html#periodos",
+    "title": "Metodología",
+    "section": "Periodos",
+    "text": "Periodos\n\n\n\n\n\nPeriodo\nInicio\nFin\n\n\n\n\nInvierno 2022\n2022-05-01\n2022-08-31\n\n\nVerano 2022-23\n2022-12-01\n2023-02-28\n\n\nInvierno 2023\n2023-05-01\n2023-08-31\n\n\nVerano 2023-24\n2023-12-01\n2024-02-29\n\n\nInvierno 2024\n2024-05-01\n2024-08-31\n\n\nVerano 2024-25\n2024-12-01\n2025-02-28\n\n\nInvierno 2025\n2025-05-01\n2025-08-31\n\n\nVerano 2025-26\n2025-12-01\n2026-02-28\n\n\nInvierno 2026\n2026-05-01\n2026-08-31\n\n\nVerano 2026-27\n2026-12-01\n2027-02-28",
+    "crumbs": [
+      "Metodología"
+    ]
+  },
+  {
+    "objectID": "metodologia.html#ética-y-privacidad",
+    "href": "metodologia.html#ética-y-privacidad",
+    "title": "Metodología",
+    "section": "Ética y privacidad",
+    "text": "Ética y privacidad\n\n\nÉtica y privacidad Los usuarios se anonimizan; el sexo se infiere por nombre (diccionario propio), solo se usa de forma agregada y puede ser incorrecto.\nNo se publica ningún texto de mensajes: de los enlaces solo se muestra el dominio. 😉",
+    "crumbs": [
+      "Metodología"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Análisis de sentimientos en un grupo de Telegram",
+    "section": "",
+    "text": "28 000\n\n\nelementos exportados\n\n\n\n\n23 462\n\n\nmensajes\n\n\n\n\n2 054\n\n\nusuarios que escribieron\n\n\n\n\n19 317\n\n\nmensajes analizados\n\n\n\n\n47.1 %\n\n\ncon algún sentimiento\n\n\n\n\n12/2022 – 10/2026\n\n\nperiodo cubierto\n\n\n\n\n\n\n¿De qué trata? Analizamos el chat de un grupo de Telegram del curso de temporada para medir qué emociones expresan los estudiantes, cuándo y sobre qué temas, con un diccionario propio de 15 sentimientos validado con 100 mensajes etiquetados a mano.",
+    "crumbs": [
+      "Inicio"
+    ]
+  },
+  {
+    "objectID": "index.html#hallazgos-principales",
+    "href": "index.html#hallazgos-principales",
+    "title": "Análisis de sentimientos en un grupo de Telegram",
+    "section": "Hallazgos principales",
+    "text": "Hallazgos principales\n\n\n🤔 Curiosidad Uno de cada tres mensajes es una pregunta: la curiosidad aparece en el 35,5 % de los mensajes analizados. El grupo se usa sobre todo para resolver dudas.\n\n\n✅ Validación Al mejorar el diccionario (contexto, negaciones, preguntas y publicidad), la precisión subió de 49 % a 75 % y el recall de 32 % a 54 % (F1: 0.39 → 0.63) sobre los 100 mensajes etiquetados.\n\n\n🚫 Publicidad Se excluyó la publicidad: 589 mensajes (invitaciones a otros grupos, formularios, convocatorias) salen del análisis; casi dos de cada tres enlaces del chat son invitaciones de WhatsApp.\n\n\n😤 Frustración y preocupación Se concentran en inscripción, cupos y pagos, y suben en los periodos de inscripción (ver Sugerencias y Texto y temas).\n\n\n📡 Perfil emocional El perfil emocional de Invierno, Verano y fuera de temporada es parecido; lo que cambia es el volumen y los temas (ver el radar en Sentimientos).",
+    "crumbs": [
+      "Inicio"
+    ]
+  },
+  {
+    "objectID": "index.html#cómo-recorrer-el-sitio",
+    "href": "index.html#cómo-recorrer-el-sitio",
+    "title": "Análisis de sentimientos en un grupo de Telegram",
+    "section": "Cómo recorrer el sitio",
+    "text": "Cómo recorrer el sitio\nMetodologíaCalidadValidaciónSentimientosTexto y temasSugerenciasInteractivosBitácoraConclusiones",
+    "crumbs": [
+      "Inicio"
+    ]
+  },
+  {
+    "objectID": "calidad.html",
+    "href": "calidad.html",
+    "title": "Calidad de datos y limpieza",
+    "section": "",
+    "text": "Principio No se elimina ninguna fila: el ruido se marca con columnas verdadero/falso y se puede filtrar o revertir.",
+    "crumbs": [
+      "Calidad"
+    ]
+  },
+  {
+    "objectID": "calidad.html#embudo-de-datos",
+    "href": "calidad.html#embudo-de-datos",
+    "title": "Calidad de datos y limpieza",
+    "section": "Embudo de datos",
+    "text": "Embudo de datos\n\n\n\n28 000\n\n\nElementos del JSON\n\n\n100 % del total\n\n\n\n\n23 462\n\n\nMensajes (no servicio)\n\n\n83.8 % del total\n\n\n\n\n22 071\n\n\nMensajes con texto\n\n\n78.8 % del total\n\n\n\n\n19 317\n\n\nUsables (sin publicidad ni ruido)\n\n\n69 % del total\n\n\n\n\n9 093\n\n\nUsables con al menos 1 sentimiento\n\n\n32.5 % del total\n\n\n\n\n\n\n\n\n\n\nDe 28 000 elementos exportados quedan 19 317 mensajes analizables; casi la mitad de ellos (9 093) expresa al menos un sentimiento.",
+    "crumbs": [
+      "Calidad"
+    ]
+  },
+  {
+    "objectID": "calidad.html#marcas-de-limpieza",
+    "href": "calidad.html#marcas-de-limpieza",
+    "title": "Calidad de datos y limpieza",
+    "section": "Marcas de limpieza",
+    "text": "Marcas de limpieza\n\n\n\n4 538\n\n\nEventos de servicio\n\n\nno son mensajes\n\n\n\n\n1 391\n\n\nSin texto\n\n\n5.9 % de los mensajes\n\n\n\n\n1 389\n\n\nSolo multimedia\n\n\n5.9 % de los mensajes\n\n\n\n\n514\n\n\nSolo enlace\n\n\n2.2 % de los mensajes\n\n\n\n\n325\n\n\nSolo emoji\n\n\n1.4 % de los mensajes\n\n\n\n\n4 057\n\n\nMuy corto (1-2 palabras)\n\n\n17.3 % de los mensajes\n\n\n\n\n886\n\n\nRepetido (3+ palabras)\n\n\n3.8 % de los mensajes\n\n\n\n\n410\n\n\nEn ráfaga (5+ seguidos)\n\n\n1.7 % de los mensajes\n\n\n\n\n589\n\n\nPublicidad\n\n\n2.5 % de los mensajes\n\n\n\n\n1 980\n\n\nMensajes con emojis\n\n\n8.4 % de los mensajes\n\n\n\nUn mismo mensaje puede tener varias marcas. Los anuncios largos y la publicidad se marcan y no se analizan para sentimientos.",
+    "crumbs": [
+      "Calidad"
+    ]
+  },
+  {
+    "objectID": "calidad.html#enlaces-qué-se-comparte-solo-dominios",
+    "href": "calidad.html#enlaces-qué-se-comparte-solo-dominios",
+    "title": "Calidad de datos y limpieza",
+    "section": "Enlaces: qué se comparte (solo dominios)",
+    "text": "Enlaces: qué se comparte (solo dominios)\n\n\n\n\n\n\n\nCasi dos de cada tres enlaces son invitaciones de WhatsApp, seguidas de formularios; por eso la publicidad se excluyó del análisis.",
+    "crumbs": [
+      "Calidad"
+    ]
+  },
+  {
+    "objectID": "calidad.html#puntaje-de-spam-y-sensibilidad-del-umbral",
+    "href": "calidad.html#puntaje-de-spam-y-sensibilidad-del-umbral",
+    "title": "Calidad de datos y limpieza",
+    "section": "Puntaje de spam y sensibilidad del umbral",
+    "text": "Puntaje de spam y sensibilidad del umbral\n\n\n¿Cómo se lee? Cada mensaje recibe un puntaje (enlaces, invitaciones, muchos emojis, MAYÚSCULAS, repetido, muy largo). El filtro final solo saca invitaciones y convocatorias; la gráfica muestra cuánto coincide el puntaje con ese filtro según el umbral elegido.\n\n\n\n\n\n\n\n\n\nCon umbrales bajos el puntaje marca demasiados mensajes (baja precisión); al subirlo coincide mejor con el filtro de publicidad sin perder casi nada.",
+    "crumbs": [
+      "Calidad"
+    ]
+  },
+  {
+    "objectID": "calidad.html#chequeos-de-integridad",
+    "href": "calidad.html#chequeos-de-integridad",
+    "title": "Calidad de datos y limpieza",
+    "section": "Chequeos de integridad",
+    "text": "Chequeos de integridad\n\n10 de 10 chequeos en OK✔\n\n\n\n✔ V1 Ids unicos28000 filas\n\n\n✔ V2 Se conservan los 28 000 elementosfilas: 28000\n\n\n✔ V3 Fechas completas y en orden razonable2022-12-16 a 2026-10-13\n\n\n✔ V4 Reacciones: suma por mensaje = tabla de reacciones6074 vs 6074\n\n\n✔ V5 Ningun mensaje usable es publicidad589 publicidades excluidas\n\n\n✔ V6 Todo usable tiene textoNA\n\n\n✔ V7 Conteos s_* son enteros &gt;= 0 y sin NANA\n\n\n✔ V8 sent_dom vacio &lt;=&gt; sin ninguna senalNA\n\n\n✔ V9 Periodos asignados a todo mensajeNA\n\n\n✔ V10 Base de tasas = suma de usables por periodo19317 usables",
+    "crumbs": [
+      "Calidad"
+    ]
+  },
+  {
+    "objectID": "sentimientos.html",
+    "href": "sentimientos.html",
+    "title": "Sentimientos",
+    "section": "",
+    "text": "😊🙏🤔😢😤😮😌",
+    "crumbs": [
+      "Sentimientos"
+    ]
+  },
+  {
+    "objectID": "sentimientos.html#visión-general-diccionario-propio-v2-15-categorías",
+    "href": "sentimientos.html#visión-general-diccionario-propio-v2-15-categorías",
+    "title": "Sentimientos",
+    "section": "Visión general (diccionario propio v2, 15 categorías)",
+    "text": "Visión general (diccionario propio v2, 15 categorías)\n\n\n\n\n\n\n\nLa curiosidad es el sentimiento dominante; le siguen la gratitud, la frustración y la alegría.\n\n\n\nLo que más se ve La curiosidad (preguntas) domina; después vienen la gratitud, la frustración y la alegría.",
+    "crumbs": [
+      "Sentimientos"
+    ]
+  },
+  {
+    "objectID": "sentimientos.html#librería-nrc-8-frente-a-diccionario-propio-15",
+    "href": "sentimientos.html#librería-nrc-8-frente-a-diccionario-propio-15",
+    "title": "Sentimientos",
+    "section": "Librería NRC (8) frente a diccionario propio (15)",
+    "text": "Librería NRC (8) frente a diccionario propio (15)\n\n\n\n\n\n\n\nLa librería NRC detecta más mensajes pero con palabras ambiguas; el diccionario propio es más conservador.\n\n\n\n¿Por qué dos diccionarios? NRC es un diccionario inglés traducido: detecta muchísimo más (confianza, anticipación) pero con palabras ambiguas. El diccionario propio es más conservador y cubre 15 categorías pensadas para este contexto.",
+    "crumbs": [
+      "Sentimientos"
+    ]
+  },
+  {
+    "objectID": "sentimientos.html#radar-de-emociones-invierno-verano-y-fuera-de-temporada",
+    "href": "sentimientos.html#radar-de-emociones-invierno-verano-y-fuera-de-temporada",
+    "title": "Sentimientos",
+    "section": "Radar de emociones: Invierno, Verano y fuera de temporada",
+    "text": "Radar de emociones: Invierno, Verano y fuera de temporada\n\n\n\n\n\n\n\nEl perfil emocional es muy parecido entre Invierno, Verano y fuera de temporada; cambia el volumen, no la forma.\n\nEl perfil es muy parecido entre temporadas.",
+    "crumbs": [
+      "Sentimientos"
+    ]
+  },
+  {
+    "objectID": "sentimientos.html#por-periodo",
+    "href": "sentimientos.html#por-periodo",
+    "title": "Sentimientos",
+    "section": "Por periodo",
+    "text": "Por periodo\n\n\n\n\n\n\n\nLa curiosidad domina todos los periodos (el color llega al máximo en 8 %); el resto de sentimientos se mantiene en valores bajos y estables.\n\n\n\n\n\n\n\n\nLas tres temporadas tienen valores similares en casi todos los sentimientos.",
+    "crumbs": [
+      "Sentimientos"
+    ]
+  },
+  {
+    "objectID": "sentimientos.html#flujo-periodo-sentimiento-sankey",
+    "href": "sentimientos.html#flujo-periodo-sentimiento-sankey",
+    "title": "Sentimientos",
+    "section": "Flujo periodo → sentimiento (Sankey)",
+    "text": "Flujo periodo → sentimiento (Sankey)\n\n\n\n\n\n\n\nCada periodo reparte sus mensajes con sentimiento entre las mismas categorías; el grosor del flujo indica cuántos mensajes son.",
+    "crumbs": [
+      "Sentimientos"
+    ]
+  },
+  {
+    "objectID": "sentimientos.html#reloj-de-actividad-hora-del-día-y-tono",
+    "href": "sentimientos.html#reloj-de-actividad-hora-del-día-y-tono",
+    "title": "Sentimientos",
+    "section": "Reloj de actividad: hora del día y tono",
+    "text": "Reloj de actividad: hora del día y tono\n\n\n\n\n\n\n\nLa actividad se concentra en la mañana, con un máximo alrededor de las 10 h, y es muy baja de madrugada.\n\n\n\n\n\n\n\n\nLa actividad es mayor entre semana y baja los fines de semana.",
+    "crumbs": [
+      "Sentimientos"
+    ]
+  },
+  {
+    "objectID": "sentimientos.html#reacciones",
+    "href": "sentimientos.html#reacciones",
+    "title": "Sentimientos",
+    "section": "Reacciones",
+    "text": "Reacciones\n\n👍❤️🔥😢🎉🙏👏\n\n\n\n\n\n\n\n\nEl pulgar arriba concentra casi todas las reacciones, por eso la categoría “seguridad” domina.\n\n\n\nReaccionar es aprobar La reacción más usada es el pulgar arriba (aprobación): reaccionar en este grupo es sobre todo aprobar.",
+    "crumbs": [
+      "Sentimientos"
+    ]
+  },
+  {
+    "objectID": "sentimientos.html#hombres-y-mujeres-sexo-inferido-por-nombre",
+    "href": "sentimientos.html#hombres-y-mujeres-sexo-inferido-por-nombre",
+    "title": "Sentimientos",
+    "section": "Hombres y mujeres (sexo inferido por nombre)",
+    "text": "Hombres y mujeres (sexo inferido por nombre)\n\n\n\n\n\n\n\nLa mayoría de las diferencias entre hombres y mujeres son pequeñas; solo las marcadas con asterisco son significativas.\n\n\n\nCon cautela Gran parte de los mensajes quedó como indeterminado porque no se pudo inferir el sexo; los resultados se leen con cautela.",
+    "crumbs": [
+      "Sentimientos"
+    ]
+  },
+  {
+    "objectID": "sugerencias.html",
+    "href": "sugerencias.html",
+    "title": "Sugerencias",
+    "section": "",
+    "text": "Los días con más preocupación coinciden con fechas de inscripción y cupos.\n\n\n\n\n\n\n\n\nLa frustración se dispara en días puntuales, casi siempre por cupos agotados.\n\n\n\n\n\n\n\n\nLa confusión aparece en pocos mensajes y días sueltos; se lee con cautela.\n\n\n\nPicos Los picos de frustración y preocupación coinciden con momentos de inscripción, cupos y pagos.",
+    "crumbs": [
+      "Sugerencias"
+    ]
+  },
+  {
+    "objectID": "sugerencias.html#días-pico-preocupación-frustración-y-confusión",
+    "href": "sugerencias.html#días-pico-preocupación-frustración-y-confusión",
+    "title": "Sugerencias",
+    "section": "",
+    "text": "Los días con más preocupación coinciden con fechas de inscripción y cupos.\n\n\n\n\n\n\n\n\nLa frustración se dispara en días puntuales, casi siempre por cupos agotados.\n\n\n\n\n\n\n\n\nLa confusión aparece en pocos mensajes y días sueltos; se lee con cautela.\n\n\n\nPicos Los picos de frustración y preocupación coinciden con momentos de inscripción, cupos y pagos.",
+    "crumbs": [
+      "Sugerencias"
+    ]
+  },
+  {
+    "objectID": "sugerencias.html#cuándo-se-escribe-y-cómo-cambian-los-sentimientos",
+    "href": "sugerencias.html#cuándo-se-escribe-y-cómo-cambian-los-sentimientos",
+    "title": "Sugerencias",
+    "section": "Cuándo se escribe y cómo cambian los sentimientos",
+    "text": "Cuándo se escribe y cómo cambian los sentimientos\n\n\n\n\n\n\n\nLa actividad es mayor en las mañanas de los días de semana.\n\n\n\n\n\n\n\n\nLos sentimientos mantienen un perfil parecido a lo largo del día; la curiosidad es la más alta en casi todas las horas.",
+    "crumbs": [
+      "Sugerencias"
+    ]
+  },
+  {
+    "objectID": "sugerencias.html#quién-recibe-respuesta-y-qué-tan-rápido",
+    "href": "sugerencias.html#quién-recibe-respuesta-y-qué-tan-rápido",
+    "title": "Sugerencias",
+    "section": "¿Quién recibe respuesta y qué tan rápido?",
+    "text": "¿Quién recibe respuesta y qué tan rápido?\n\n\n\n\n\n\n\nSolo una cuarta parte de los mensajes recibe respuesta, y la mediana de espera es de unos 6 minutos.",
+    "crumbs": [
+      "Sugerencias"
+    ]
+  },
+  {
+    "objectID": "sugerencias.html#índice-emocional",
+    "href": "sugerencias.html#índice-emocional",
+    "title": "Sugerencias",
+    "section": "Índice emocional",
+    "text": "Índice emocional\n\n\n\n\n\n\n\nEl índice se mueve cerca de cero: hay un equilibrio entre emociones positivas y negativas a lo largo del tiempo.\n\n\n\n\n\n\n\n\nLas emociones positivas y negativas suben y bajan juntas, según el volumen de mensajes de cada mes.\n\n\n\n\n\n\n\n\nVerano 2025-26 es el periodo más negativo; fuera de temporada e Invierno 2024 son los más positivos.\n\n\n\nEquilibrio Con el diccionario v2 el índice emocional general queda cerca de cero: hay un equilibrio entre emociones positivas y negativas, y el verano 2025-26 es el periodo más negativo.",
+    "crumbs": [
+      "Sugerencias"
+    ]
+  },
+  {
+    "objectID": "sugerencias.html#núcleo-activo-frente-al-resto",
+    "href": "sugerencias.html#núcleo-activo-frente-al-resto",
+    "title": "Sugerencias",
+    "section": "Núcleo activo frente al resto",
+    "text": "Núcleo activo frente al resto\n\n\n\n\n\n\n\nLos usuarios más activos expresan sentimientos con una frecuencia parecida a la del resto.\n\n\n\n\n\n\n\n\nPocos usuarios concentran la expresión de sentimientos; los puntos grandes expresan más variedad.",
+    "crumbs": [
+      "Sugerencias"
+    ]
+  },
+  {
+    "objectID": "bitacora.html",
+    "href": "bitacora.html",
+    "title": "Bitácora",
+    "section": "",
+    "text": "paso\nfecha\netapa\naccion\nfilas_antes\nfilas_despues\nsalida\nestado\norigen\n\n\n\n\n1\n2026-10-27 11:18:00\n1. Ingesta\nLectura de result.json desde media.zip (28 000 elementos); SHA-256 del zip\n28000\n28000\nbase.rds\nOK\nreconstruida\n\n\n2\n2026-10-27 11:18:00\n2. Limpieza\nMarcas de ruido, repetidos, rafagas y hash de usuario; sin borrar filas\n28000\n28000\nlimpio.rds\nOK\nreconstruida\n\n\n3\n2026-10-27 11:20:00\n3. Periodos\nInvierno (may-ago), Verano (dic-feb) y Fuera de temporada\n28000\n28000\nlisto.rds\nOK\nreconstruida\n\n\n4\n2026-10-27 11:39:00\n6. Periodos x sentimiento\nTabla de sentimientos por periodo\n135\n135\nsentimientos_por_periodo.csv\nOK\nreconstruida\n\n\n5\n2026-10-27 11:39:00\n6. Sankey\nSankey periodo a sentimiento (estatico e interactivo)\nNA\nNA\ng_sankey_periodos.png\nOK\nreconstruida\n\n\n6\n2026-10-27 11:47:00\n4. Lexico\nDiccionario propio de 15 sentimientos (palabras y emojis)\n423\n423\nlexicon_sentimientos.csv\nOK\nreconstruida\n\n\n7\n2026-10-27 11:48:00\n5. Sentimientos\nConteo de sentimientos por mensaje con el diccionario propio\n28000\n28000\nlisto_sent.rds\nOK\nreconstruida\n\n\n8\n2026-10-27 11:49:00\n7. NRC vs propio\nComparacion syuzhet/NRC (8) contra diccionario propio (15)\n23\n23\ncomparacion_nrc_propio.csv\nOK\nreconstruida\n\n\n9\n2026-10-27 11:49:00\n7. Reacciones\nSentimiento de las reacciones (emojis)\n11\n11\nreacciones_por_sentimiento.csv\nOK\nreconstruida\n\n\n10\n2026-10-27 11:50:00\n8. Genero\nSexo inferido por nombre (solo hash y sexo) y sentimientos por sexo\n4460\n4460\nusuarios_sexo.csv\nOK\nreconstruida\n\n\n11\n2026-10-27 13:05:00\n9. Texto\nTokenizacion, stopwords, frecuencias, TF-IDF, bigramas, Zipf\n77708\n77708\ntokens.rds\nOK\nreconstruida\n\n\n12\n2026-10-27 13:16:00\n10. Temas\nLDA (K=6) y tema dominante por mensaje\n10089\n10089\ntemas.rds\nOK\nreconstruida\n\n\n13\n2026-10-27 13:19:00\n11. Picos y respuesta\nDias pico de preocupacion y velocidad de respuesta por sentimiento\n16\n16\nrespuesta_por_sentimiento.csv\nOK\nreconstruida\n\n\n14\n2026-10-27 13:24:00\n12. Indice y nucleo\nIndice emocional mensual y nucleo de usuarios vs resto\n33\n33\nindice_emocional_mensual.csv\nOK\nreconstruida\n\n\n15\n2026-10-27 13:28:00\n13. Validacion\nMuestra de 100 mensajes para validacion manual del diccionario\n100\n100\nmuestra_100.csv\nOK\nreconstruida\n\n\n16\n2026-10-27 14:19:00\n14b. Ajuste visual\nNubes de palabras y red de bigramas con fondo blanco\n150\n150\ng_nubes_sentimientos.png, g_red_bigramas.png\nOK\nejecucion\n\n\n17\n2026-10-28 00:48:00\n8. Genero\nSexo inferido por diccionario de nombres + terminacion; sentimientos por sexo con prueba de proporciones\n19317\n19317\nusuarios_sexo.csv, g_sentimientos_sexo.png\nOK\nejecucion\n\n\n18\n2026-10-28 00:49:00\n11. Picos y respuesta\nDias pico con palabras clave, hora x dia, sentimiento por hora y velocidad de respuesta por sentimiento\n19317\n19317\ng_picos_dia_*, g_heatmap_hora_dia, g_respuesta_sentimiento\nOK\nejecucion\n\n\n19\n2026-10-28 00:49:00\n12. Indice y nucleo\nIndice emocional mensual/periodo; nucleo 100+ vs resto; top usuarios anonimos\n19317\n19317\ng_indice_emocional, g_nucleo_vs_resto, g_top_usuarios\nOK\nejecucion\n\n\n20\n2026-10-28 00:49:00\n14b. Ajuste visual\nNubes de palabras y red de bigramas con fondo blanco\n150\n150\ng_nubes_sentimientos.png, g_red_bigramas.png\nOK\nejecucion\n\n\n21\n2026-10-28 00:54:00\n6. Periodos\nSentimientos por periodo: heatmap, Sankey, series mensuales y picos\n19317\n19317\ngraficos\nOK\nejecucion\n\n\n22\n2026-10-28 00:57:00\n7. Comparacion y reacciones\nNRC/syuzhet (8) vs propio (15) y sentimiento de reacciones\n18992\n18992\ng_nrc_vs_propio.png, g_reacciones_sentimiento.png\nOK\nejecucion\n\n\n23\n2026-10-28 01:09:00\n8. Radar y polar\nRadar de emociones (temporadas y periodos) y relojes polares hora/semana\n19317\n19317\ng_radar_.png, g_polar_.png, plotly_radar_*.html, plotly_polar_hora.html\nOK\nejecucion\n\n\n24\n2026-10-28 01:14:00\n9. Calidad de datos\nEmbudo, dominios, spam con sensibilidad de umbral y chequeos V1-V10\n28000\n19317\ng_calidad_.png, plotly_calidad_.html, calidad_*.csv\nOK\nejecucion\n\n\n25\n2026-10-28 01:26:00\n10. Sitio Quarto\nSitio actualizado con v2, validacion, radar/polar y calidad\n0\n0\ndocs/\nOK\nejecucion\n\n\n26\n2026-10-28 03:44:00\n10. Sitio Quarto\nRediseno final del sitio: menu lateral, burbujas, graficas interactivas\n0\n0\ndocs/\nOK\nejecucion\n\n\n27\n2026-10-28 04:05:00\n10. Sitio Quarto\nRediseno final del sitio: menu lateral, burbujas, graficas interactivas\n0\n0\ndocs/\nOK\nejecucion",
+    "crumbs": [
+      "Bitácora"
+    ]
+  }
+]
